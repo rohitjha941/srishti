@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 2vw;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    .navbar-items {
+        display: inline;
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+
+            a {
+                font-weight: 600;
+                display: inline-block;
+                line-height: 1.125rem;
+                font-size: 0.875rem;
+                text-decoration: none;
+                color: #212121;
+                padding: 1.875rem;
+            }
+
+            .active {
+                background: #0B4CA1;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

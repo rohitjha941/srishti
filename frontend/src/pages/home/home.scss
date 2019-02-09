@@ -1,0 +1,133 @@
+    .home {
+        padding: 6rem 3.75rem;
+
+        .home-about {
+            padding-left: 2.5rem;
+            display: grid;
+            grid-template-columns: 35% 60%;
+            grid-column-gap: 5vw;
+
+            p:first-child {
+                font-style: normal;
+                font-weight: bold;
+                line-height: 4.5rem;
+                font-size: 3.375rem;
+                color: #212121;
+                font-family: 'Playfair Display', serif;
+
+            }
+
+            p:nth-child(2) {
+                font-weight: 300;
+                line-height: 1.75rem;
+                font-size: 1rem;
+                color: #000000;
+
+            }
+
+            p:nth-child(3) a {
+                font-weight: 600;
+                line-height: 1.4375rem;
+                font-size: 1.125rem;
+                color: #0B4CA1;
+
+            }
+        }
+
+
+        .home-sponsors {
+            background: #F6F7F8;
+            margin-left: 18%;
+
+            .home-sponsors-div {
+                display: grid;
+                grid-template-columns: 25rem auto;
+                padding: 0 3% 5% 3%;
+                grid-column-gap: 5vw;
+
+                .home-sponsors-description {
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 1.5rem;
+                    font-size: 1rem;
+                    color: #000000;
+                }
+
+                .home-sponsors-array {
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    grid-row-gap: 2vw;
+                    grid-column-gap: 5vw;
+
+                    div {
+                        background: #D8D8D8;
+                        width: 100%;
+                        height: 5.625rem;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .home-contact {
+            background: #F6F7F8;
+            margin-left: 18%;
+            display: grid;
+            grid-template-columns: auto 40%;
+
+            .home-contact-form {
+                form {
+                    background: #FFFFFF;
+                    border-radius: 2px;
+                    margin: 1.25rem;
+                    padding: 2.5rem 1.875rem;
+                    text-align: center;
+
+                    input {
+                        width: 100%;
+                        line-height: 1.8125rem;
+                        font-size: 1.4375rem;
+                        color: #929292;
+                        border: none;
+                        border-bottom: 0.0625rem solid #979797;
+                        padding-bottom: 0.5625rem;
+                        margin-bottom: 3.375rem;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    input[type=submit] {
+
+                        background: #4A90E2;
+                        border-radius: 0.0625rem;
+                        width: auto;
+                        line-height: 1.8125rem;
+                        font-size: 1.4375rem;
+                        text-align: justify;
+
+                        color: #FFFFFF;
+                        padding:0.875rem 3.125rem;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .home-sponsors, .home-about , .home-contact{
+            margin-bottom: 25vh;
+        }
+
+    }
+
+
+    .slidder_temp{
+        background: red; 
+        width:100%;
+        height:60vh;
+    }
+ 
