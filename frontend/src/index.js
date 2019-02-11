@@ -8,6 +8,7 @@ import Nav from "./compo/header/header";
 import Home from "./pages/home/home";
 import Groups from "./pages/groups/group";
 import GoupDetails from "./pages/groups_details/index"
+import About from "./pages/about";
 
 class Main extends Component {
   render() {
@@ -19,6 +20,7 @@ class Main extends Component {
             <Route path="/" exact = {true} component={Home} />
             <Route path = "/groups" exact = {true} component = {Groups} />
             <Route path = "/groups/details" exact = {true} component = {GoupDetails} />
+            <Route path = "/about" component = {About} />
           </Switch>
         </>
       </Router>

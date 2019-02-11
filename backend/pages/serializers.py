@@ -23,3 +23,9 @@ class GroupsSerializer(serializers.ModelSerializer):
         model = Groups
         fields = "__all__"
 
+
+
+class DomainSerializers(serializers.ModelSerializer):
+    class Meta:
+        model = Domains
+        fields = "__all__"

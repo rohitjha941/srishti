@@ -1,0 +1,34 @@
+.History {
+    background: #F6F7F8;
+    margin: 5% 4.4vw 5% 13vw;
+    padding-bottom: 2rem;
+
+    .HistoryDetails {
+        display: grid;
+        grid-template-columns: repeat(2, 42%);
+        width: 100%;
+        grid-column-gap: 16%;
+
+        .HistoryDetailsImage {
+
+            margin-right: -5%;
+
+
+            img {
+                width: 100%;
+                display: inline-block;
+                border-radius: 0.125rem;
+                box-shadow: 0 0 22px rgba(0, 0, 0, 0.15);
+
+            }
+        }
+
+        .HistoryDetailsText {
+            padding: 1.875rem 0 0 3.75rem;
+            line-height: 1.5rem;
+            font-size: 1rem;
+            color: #000000;
+
+        }
+    }
+}

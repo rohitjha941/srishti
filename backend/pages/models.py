@@ -13,7 +13,7 @@ class Groups(models.Model):
         verbose_name = "Group Name"
     )
 
-    description = models.CharField(
+    description = models.TextField(
         default= "",
         max_length = 1000,
         verbose_name = "Group Descritption"
@@ -67,8 +67,18 @@ class GroupEvents(models.Model):
         verbose_name = "Event Name"
     )
 
-    event_description =  models.CharField(
+    event_description =  models.TextField(
         default= "",
-        max_length = 100,
+        max_length = 1000,
         verbose_name = "Event Description"
+    )
+
+class Domains(models.Model):
+    name = models.CharField(
+        default = "",
+        max_length = 100
+    )
+
+    image = models.ImageField( 
+        upload_to="domain_images/", 
     )

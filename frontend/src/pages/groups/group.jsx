@@ -10,8 +10,6 @@ export default class Groups extends Component {
   componentDidMount() {
     axios.get(backend_url + "/backend/group/").then(res => {
       this.setState({ groups: res.data });
-
-      console.log(res.data);
     });
   }
   render() {

@@ -6,7 +6,7 @@ import { NavLink,withRouter } from "react-router-dom";
   
     componentDidMount(){
         var height = document.getElementById("nav").offsetHeight;
-        height = height - 5;
+        height = height;
         height = height + "px";
     
         document.getElementById("body").style.paddingTop = height;

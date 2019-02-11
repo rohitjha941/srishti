@@ -15,3 +15,7 @@ class GroupMembersAdmin(ImportExportModelAdmin):
 @register(GroupEvents)
 class GroupMembersAdmin(ImportExportModelAdmin):
     list_display =   ('event_name', 'event_description', )
+
+@register(Domains)
+class DomainsAdmin(ImportExportModelAdmin):
+    list_display =   ('name', 'image', )

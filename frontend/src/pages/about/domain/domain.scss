@@ -1,0 +1,30 @@
+.Domain {
+    margin: 5% 12vw;
+
+    .DomainArray {
+        background: #F9F9F9;
+        padding: 3.0625rem 3.5625rem;
+        display: grid;
+        grid-template-columns: repeat(5, 18%);
+        grid-column-gap: 1vw;
+        grid-row-gap: 1vw;
+
+        div {
+            img {
+                width: 100%;
+            }
+
+            p {
+                font-weight: 600;
+                line-height: 1.125rem;
+                font-size: 0.875rem;
+                color: #212121;
+                text-align: center;
+                text-transform: uppercase;
+                margin-top: 0.625rem;
+            }
+        }
+
+
+    }
+}

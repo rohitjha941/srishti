@@ -10,6 +10,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('backend/admin/', admin.site.urls),
     path('backend/group/', ListGroup.as_view()),
+    path('backend/domain/', DomainList.as_view()),
 ]
 
 

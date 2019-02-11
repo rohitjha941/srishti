@@ -1,0 +1,42 @@
+.Stat {
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    .Stat-inner {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        background: #F6F7F8;
+        padding: 5vw 4vw;
+
+        .Stat-unit {
+            padding: 0 4vw;
+            border-right: 1px solid #979797;
+
+            p{
+                margin-bottom: 0;
+            }
+
+            p:first-child {
+                font-weight: bold;
+                line-height: 4rem;
+                font-size: 3rem;
+                color: #212121;
+            }
+
+            p:last-child {
+                font-weight: 300;
+                line-height: 1.75rem;
+                font-size: 1.375rem;
+                margin-top:  0.875rem;
+                color: #212121;
+
+            }
+        }
+
+        .Stat-unit:last-child {
+            border-right: none;
+        }
+    }
+}
