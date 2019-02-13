@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./header.scss";
+import Logo from  "../../static/logo.png"
 
 import { NavLink,withRouter } from "react-router-dom";
  class Nav extends Component {
@@ -15,7 +16,9 @@ import { NavLink,withRouter } from "react-router-dom";
     return (
       <div id ="nav" className="navbar">
         <span>
-            <NavLink to ="/" >fbhjfserdhjfrhj </NavLink>    
+            <NavLink to ="/" > 
+              <img src = {Logo} alt = "Srishti Logo" />
+            </NavLink>    
         </span>
 
         <span>

@@ -1,28 +1,29 @@
 .Stat {
-    height: 100%;
-    display: grid;
-    align-items: center;
-    justify-items: center;
+ 
 
     .Stat-inner {
         display: grid;
         grid-template-columns: repeat(4, auto);
-        background: #F6F7F8;
-        padding: 5vw 4vw;
+        background: #552E91;
+        padding: 6.875rem 13.75rem;
+        margin-bottom: 12.5rem;
 
         .Stat-unit {
             padding: 0 4vw;
-            border-right: 1px solid #979797;
+            border-right: 1px solid white;
 
             p{
                 margin-bottom: 0;
+                color:white;
+                font-family: 'Playfair Display', serif !important;
+                text-align: center;
             }
 
             p:first-child {
                 font-weight: bold;
                 line-height: 4rem;
                 font-size: 3rem;
-                color: #212121;
+                
             }
 
             p:last-child {
@@ -30,7 +31,7 @@
                 line-height: 1.75rem;
                 font-size: 1.375rem;
                 margin-top:  0.875rem;
-                color: #212121;
+              
 
             }
         }

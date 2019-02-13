@@ -1,36 +1,130 @@
     .home {
-        padding: 6rem 3.75rem;
+        margin-top: 7.5rem;
 
         .home-about {
-            padding-left: 2.5rem;
+
             display: grid;
             grid-template-columns: 35% 60%;
             grid-column-gap: 5vw;
 
-            p:first-child {
-                font-style: normal;
-                font-weight: bold;
-                line-height: 4.5rem;
-                font-size: 3.375rem;
-                color: #212121;
-                font-family: 'Playfair Display', serif;
 
-            }
 
             p:nth-child(2) {
+
                 font-weight: 300;
                 line-height: 1.75rem;
-                font-size: 1rem;
+                font-size: 1.125rem;
+
                 color: #000000;
 
             }
 
             p:nth-child(3) a {
-                font-weight: 600;
-                line-height: 1.4375rem;
-                font-size: 1.125rem;
-                color: #0B4CA1;
+                font-weight: bold;
+                line-height: 23px;
+                font-size: 18px;
+                color: #552E91;
+            }
+        }
 
+        .home-domains {
+
+
+            .home-domain-slidder {
+
+
+                img {
+                    width: 25vw;
+                }
+
+                .slick-arrow {
+                    background: red;
+                    color: black;
+                }
+            }
+        }
+
+        .home-testimonails {
+            .home-testimonails-data {
+                display: grid;
+                grid-template-columns: 25% 45% auto;
+                grid-column-gap: 10%;
+
+                .home-testimonails-data-image {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .home-testimonails-data-arrow {
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        bottom: 0;
+                    }
+                }
+
+                .home-testimonails-data-details {
+                    p:first-child {
+                        font-weight: 300;
+                        line-height: 1.75rem;
+                        font-size: 1.125rem;
+                        margin-bottom: 15%;
+                        color: #1D1D1D;
+                    }
+
+                    p:nth-child(2) {
+                        font-weight: 600;
+                        line-height: 1.6875rem;
+                        font-size: 1.125rem;
+
+                        color: #552E91;
+
+                    }
+
+                    p:nth-child(3),
+                    p:nth-child(4) {
+                        font-style: italic;
+                        font-weight: normal;
+                        line-height: 24px;
+                        font-size: 16px;
+                        margin-bottom: 0rem;
+                        color: rgba(0, 0, 0, 0.5);
+                    }
+                }
+
+            }
+        }
+
+        .home-testimonails-data2 {
+            display: grid;
+            grid-template-columns: auto 45% 25% !important;
+            margin-top: 7.5rem;
+
+            text-align: right;
+        }
+
+        #testi2 {
+
+
+            .home-testimonails-data-image {
+                grid-row: 1;
+                grid-column: 3;
+            }
+
+            .home-testimonails-data-details {
+                grid-row: 1;
+                grid-column: 2;
+            }
+
+            .home-testimonails-data-arrow {
+                grid-row: 1;
+                grid-column: 1;
+
+                img {
+                    transform: scaleX(-1);
+                }
             }
         }
 
@@ -75,16 +169,38 @@
         .home-contact {
             background: #F6F7F8;
             margin-left: 18%;
+            margin-right: 8vw;
             display: grid;
-            grid-template-columns: auto 40%;
+            grid-template-columns: auto 45%;
+            padding: 40px 0 40px 0;
 
             .home-contact-form {
+                position: relative;
+                margin-right: 10%;
+
                 form {
+
+
+                    position: absolute;
+
                     background: #FFFFFF;
+                    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.15);
                     border-radius: 2px;
-                    margin: 1.25rem;
-                    padding: 2.5rem 1.875rem;
+
+                    padding: 80px;
+
+                    top: -20%;
+                    bottom: -20%;
                     text-align: center;
+
+
+                    p {
+                        font-weight: bold;
+                        line-height: 29px;
+                        font-size: 20px;
+
+                        color: #552E91;
+                    }
 
                     input {
                         width: 100%;
@@ -111,23 +227,74 @@
                         text-align: justify;
 
                         color: #FFFFFF;
-                        padding:0.875rem 3.125rem;
+                        padding: 0.875rem 3.125rem;
                         margin-bottom: 0;
+                    }
+                }
+            }
+
+            .home-contact-array {
+                padding: 60px 80px 0 80px;
+            }
+
+            .home-contact-item {
+                display: grid;
+                grid-template-columns: 80px auto;
+                padding-bottom: 40px;
+                grid-column-gap: 10px;
+
+                .item1,
+                .item2 {
+
+                    display: grid;
+                    align-items: center;
+
+                }
+
+                .item2 {
+                    .item2-title {
+                        line-height: 28px;
+                        font-size: 22px;
+                        text-align: justify;
+                        align-self: initial;
+                        color: #000000;
+
+                    }
+
+                    .item2-des,
+                    .item2-des a {
+                        font-weight: 300;
+                        line-height: 24px;
+                        font-size: 16px;
+
+
+                        color: #5E5B5B;
+
                     }
                 }
             }
         }
 
-        .home-sponsors, .home-about , .home-contact{
-            margin-bottom: 25vh;
+        .home-sponsors,
+        .home-about,
+        .home-contact,
+        .home-domains,
+        .home-testimonails {
+            margin-bottom: 12.5rem;
+
+        }
+
+        .home-about,
+        .home-domains,
+        .home-testimonails {
+            padding: 0 8vw;
         }
 
     }
 
 
-    .slidder_temp{
-        background: red; 
-        width:100%;
-        height:60vh;
+    .slidder_temp {
+        background: red;
+        width: 100%;
+        height: 60vh;
     }
- 

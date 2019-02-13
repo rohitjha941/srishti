@@ -11,7 +11,7 @@ export default class Stat extends Component {
             </div>
 
             <div className = "Stat-unit">
-                <p>25+</p>
+                <p>20+</p>
                 <p>TECHGROUPS</p>
             </div>
 

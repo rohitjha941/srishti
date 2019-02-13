@@ -1,7 +1,7 @@
 .groups {
     padding: 5% 10vw;
     display: grid;
-    grid-template-columns: repeat(3,30%);
+    grid-template-columns: repeat(3, 30%);
     grid-column-gap: 5vw;
     grid-row-gap: 4vw;
 
@@ -27,9 +27,11 @@
             line-height: 3rem;
             font-size: 2.25rem;
             color: #212121;
-            left:-12%;
-            bottom:-5%;
+            left: -12%;
+            bottom: -5%;
             font-family: 'Playfair Display', serif;
+            background:rgba(255,255,255,0.6);
+            border-radius: 0px 4px 4px 0px;
 
         }
     }

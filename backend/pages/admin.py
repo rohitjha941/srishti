@@ -5,7 +5,7 @@ from import_export.admin import ImportExportModelAdmin
 
 @register(Groups)
 class GroupsAdmin(ImportExportModelAdmin):
-    list_display = ('name', 'description', 'image', )
+    list_display = ('name', 'description',  )
 
 @register(GroupMembers)
 class GroupMembersAdmin(ImportExportModelAdmin):
@@ -19,3 +19,8 @@ class GroupMembersAdmin(ImportExportModelAdmin):
 @register(Domains)
 class DomainsAdmin(ImportExportModelAdmin):
     list_display =   ('name', 'image', )
+
+
+@register(GroupProject)
+class DomainsAdmin(ImportExportModelAdmin):
+    list_display =  ('project_name', 'project_description', 'project_image', )

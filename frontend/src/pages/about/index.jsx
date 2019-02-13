@@ -7,8 +7,14 @@ import Domain from "./domain/domain";
 import History from "./history/history";
 import Stat from "./stat/stat";
 
+import Slider from "react-slick"; 
+
 export default class About extends Component {
   render() {
+
+ 
+
+
     return (
       <div className="about">
         <div className="about-sidebar">
@@ -36,7 +42,9 @@ export default class About extends Component {
           <Route path="/about/domain" component={Domain} />
           <Route path="/about/history" component={History} />
           <Route path="/about/statistic" component={Stat} />
-          <Redirect exact from="/about" to="/about/srishti" />
+
+
+    {/*<Redirect exact from="/about" to="/about/srishti" />*/}
         </div>
       </div>
     );

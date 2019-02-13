@@ -4,6 +4,7 @@
      padding: 0;
      font-size: 16px;
  }
+
  @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
  @import url('https://fonts.googleapis.com/css?family=Muli');
 
@@ -24,7 +25,52 @@
      font-family: 'Playfair Display', serif;
      color: #212121;
      display: inline-block;
-     margin-left:-5rem;
-     padding:30px 0;
+     margin-left: -5rem;
+   
+     position: relative;
  }
 
+ .title::after {
+    content: "";
+    position: absolute;
+    width: 3.75rem;
+    left: 0;
+    bottom: -10px;
+    border-bottom: 4px solid #552E91;
+    
+}
+
+
+ .title2 {
+     font-style: normal;
+     font-weight: bold;
+     line-height: 4.5rem;
+     font-size: 3.375rem;
+     font-family: 'Playfair Display', serif;
+     color: #212121;
+     display: inline-block;
+     position: relative;
+     margin-bottom: 3.75rem;
+     
+
+
+ }
+
+ .title2::after {
+     content: "";
+     position: absolute;
+     width: 3.75rem;
+     left: 0;
+     bottom: -10px;
+
+     border-bottom: 4px solid #552E91;
+ }
+
+ .ViewAll , .ViewAll a{
+     font-weight: bold;
+     line-height: 1.4375rem;
+     font-size: 1.125rem;
+     float: right;
+     color: #552E91;
+
+ }
