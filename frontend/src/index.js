@@ -9,6 +9,7 @@ import Home from "./pages/home/home";
 import Groups from "./pages/groups/group";
 import GoupDetails from "./pages/groups_details/index"
 import About from "./pages/about";
+import Achievement from "./pages/achievement/achievement";
 
 class Main extends Component {
   render() {
@@ -21,7 +22,7 @@ class Main extends Component {
             <Route path = "/groups" exact = {true} component = {Groups} />
             <Route path = "/groups/details" exact = {true} component = {GoupDetails} />
             <Route path = "/about" component = {About} />
-            
+            <Route path = "/achievements" component = {Achievement} />
           </Switch>
         </>
       </Router>
