@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch,  } from "react-router-dom";
 import "antd/dist/antd.css";
 import Nav from "./compo/header/header";
 import Home from "./pages/home/home";
@@ -21,6 +21,7 @@ class Main extends Component {
             <Route path = "/groups" exact = {true} component = {Groups} />
             <Route path = "/groups/details" exact = {true} component = {GoupDetails} />
             <Route path = "/about" component = {About} />
+            
           </Switch>
         </>
       </Router>

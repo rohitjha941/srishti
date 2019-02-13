@@ -1,24 +1,28 @@
 .History {
     background: #F6F7F8;
-    margin: 5% 4.4vw 5% 13vw;
-    padding-bottom: 2rem;
+    margin: 5% 15vw 40vh 13vw;
+ 
 
     .HistoryDetails {
         display: grid;
         grid-template-columns: repeat(2, 42%);
         width: 100%;
         grid-column-gap: 16%;
+        padding-bottom: 7vh;
 
         .HistoryDetailsImage {
 
-            margin-right: -5%;
-
+            
+            position: relative;
+            
 
             img {
                 width: 100%;
                 display: inline-block;
                 border-radius: 0.125rem;
                 box-shadow: 0 0 22px rgba(0, 0, 0, 0.15);
+                position: absolute;
+                right:-7.5vw;
 
             }
         }

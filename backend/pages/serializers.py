@@ -6,7 +6,7 @@ from rest_framework import serializers
 class GroupMembersSerializer(serializers.ModelSerializer):
     class Meta:
         model = GroupMembers
-        fields =  ("id",'student_name', 'student_designation', 'photo', )
+        fields =  ("id",'student_name', 'student_designation', 'photo', "phone","email")
 
 
 class GroupEventsSerializer(serializers.ModelSerializer):

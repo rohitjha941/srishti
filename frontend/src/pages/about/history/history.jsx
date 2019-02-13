@@ -5,7 +5,7 @@ export default class History extends Component {
   render() {
     return (
       <div className="History">
-        <div className="title">History</div>
+        <div className="title">HISTORY</div>
 
         <div className="HistoryDetails">
           <div className="HistoryDetailsText">

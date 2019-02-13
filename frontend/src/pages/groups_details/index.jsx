@@ -1,22 +1,28 @@
 import React, { Component } from "react";
 import "./groups_details.scss";
 import Line from "../../static/home/Line.png";
-import { updateLocale } from "moment";
+import phone from "../../static/phone.png"
+import email from "../../static/email.png"
 export default class GoupDetails extends Component {
   render() {
     let data = this.props.location.state.groups;
     return (
       <div className="group-details">
-        <center>
-          {" "}
-          <img class="group-details-image" src={data.image} alt={data.name} />
-        </center>
+    
+         <div className = "group-details-image">
+          <img  src={data.image} alt={data.name} />
+
+          <div className = "group-details-logo" >
+            <img src = {data.logo} alt = {data.name +  "logo"} />
+          </div>
+          </div>
+     
 
         <div className="group-details-inner">
           <div className="title2">{data.name}</div>{" "}
           <span className="group-details-website">
             {" "}
-            <a target="_blank" href={data.web_url}>
+            <a target="_blank" rel="noopener noreferrer"  href={data.web_url}>
               {" "}
               Visit Website <img src={Line} alt="" />{" "}
             </a>
@@ -71,6 +77,48 @@ export default class GoupDetails extends Component {
 
                       <div className="group-details-events-descritpion">
                         {e.project_description}
+                      </div>
+
+                     
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
+
+
+
+{data.members.length === 0 ? null : (
+            <div className="group-details-events">
+              <div className="title2">Contact Us</div>
+
+              {data.members.map(e => {
+                console.log(e);
+                return (
+                  <div key={e.id} className="group-details-events-unit">
+                    <div className="group-details-events-image">
+                      <img src={e.photo} alt={e.student_name} />
+                    </div>
+
+                    <div className="group-details-events-details">
+                      <div className="group-details-events-name">
+                        {e.student_name}
+                      </div>
+
+                      <div className="group-details-contact-designation">
+                        {e.student_designation}
+                      </div>
+
+                      <div className="group-details-contact-designation">
+                        <img src = {phone} alt ="" />  {e.phone}
+                      </div>
+                      
+
+                      <div className="group-details-contact-designation">
+                        <img src = {email} alt = "" />  {e.email}
+
                       </div>
 
                      

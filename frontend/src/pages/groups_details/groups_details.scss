@@ -2,10 +2,39 @@
     .group-details-image {
         width: 100%;
         height: 70vh;
+        position:relative;
+
+        img{
+            width:100%;
+            height:100%;
+        }
+
+        .group-details-logo{
+            height:0;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+            height :280px;
+            width:280px;
+            position: absolute;
+            left:16vw;
+            bottom:-80px;
+            display: grid;
+            align-items:center;
+            justify-items: center;
+            overflow: hidden;
+
+            img{
+                max-width:100%;
+                max-height:100%;
+                padding: 2vw;
+                height:auto;
+                width:auto;
+                }
+        }
     }
 
     .group-details-inner {
-        padding: 100px 8vw;
+        padding: 140px 16vw;
 
         .group-details-website {
             float: right;
@@ -63,4 +92,14 @@
             }
         }
     }
+}
+
+.group-details-contact-designation{
+    font-style: italic;
+font-weight: normal;
+line-height: 24px;
+font-size: 18px;
+
+color: rgba(0, 0, 0, 0.5);
+padding-bottom: 23px;
 }

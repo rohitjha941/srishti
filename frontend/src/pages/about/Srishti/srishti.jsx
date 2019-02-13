@@ -5,7 +5,7 @@ export default class AboutSrishti extends Component {
     return (
       <>
         <div className="AboutSrishti">
-          <p className="AboutHeader" >
+          <p className="title2" >
           About
           </p>
           <p>

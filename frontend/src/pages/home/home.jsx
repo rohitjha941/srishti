@@ -61,7 +61,7 @@ export default class Home extends Component {
     return (
       <div className="home">
         <div className="home-about">
-          <div>
+          <div className = "home-about-content">
             <p className="title2">WHAT ARE WE ?</p>
             <p>
               Lorem ipsum dolor sit amet, suscipit sagittis cras accumsan enim
@@ -240,7 +240,7 @@ export default class Home extends Component {
 
               <div className="home-contact-item">
                 <div className="item1">
-                  <img src={Phone} alt="Phone" />
+                  <img src={Address} alt="Address" />
                 </div>
 
                 <div className="item2">

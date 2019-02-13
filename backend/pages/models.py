@@ -67,6 +67,15 @@ class GroupMembers(models.Model):
     photo = models.ImageField( 
         upload_to="user_images/", 
     )
+    phone =models.CharField(
+        default = "",
+        max_length = 100
+    )
+
+    email = models.EmailField(
+        default = "",
+        max_length = 100
+    )
 
 class GroupEvents(models.Model):
     group = models.ForeignKey(
