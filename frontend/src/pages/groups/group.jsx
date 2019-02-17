@@ -25,7 +25,7 @@ export default class Groups extends Component {
               >
                 <p className="group-name">{update.name}</p>
                 <div className="group-image-holder">
-                  <img src={update.image} alt={update.name} />
+                  <img src={update.card_image} alt={update.name} />
                 </div>
               </NavLink>
             </div>
