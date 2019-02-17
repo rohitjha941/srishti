@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./group.scss";
 import { backend_url } from "../../const";
 import axios from "axios";
-import {NavLink} from "react-router-dom"
+import { NavLink } from "react-router-dom";
 export default class Groups extends Component {
   state = {
     groups: [],
@@ -17,10 +17,14 @@ export default class Groups extends Component {
       <div className="groups">
         {this.state.groups.map(update => {
           return (
-            <div key = {update.id} className="groups-unit">
-              <NavLink to={{ pathname: '/groups/details', state: { groups : update} }}>
+            <div key={update.id} className="groups-unit">
+              <NavLink
+                to={{ pathname: "/groups/details", state: { groups: update } }}
+              >
                 <p className="group-name">{update.name}</p>
-                <img src={update.image} alt={update.name} />
+                <div className="group-image-holder">
+                  <img src={update.image} alt={update.name} />
+                </div>
               </NavLink>
             </div>
           );

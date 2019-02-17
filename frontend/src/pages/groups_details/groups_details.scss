@@ -1,105 +1,100 @@
 .group-details {
-    .group-details-image {
-        width: 100%;
-        height: 70vh;
-        position:relative;
+  .group-details-image {
+    width: 100%;
+    height: 70vh;
+    position: relative;
 
-        img{
-            width:100%;
-            height:100%;
-        }
-
-        .group-details-logo{
-            height:0;
-            background: #FFFFFF;
-            box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
-            height :280px;
-            width:280px;
-            position: absolute;
-            left:16vw;
-            bottom:-80px;
-            display: grid;
-            align-items:center;
-            justify-items: center;
-            overflow: hidden;
-
-            img{
-                max-width:100%;
-                max-height:100%;
-                padding: 2vw;
-                height:auto;
-                width:auto;
-                }
-        }
+    img {
+      width: 100%;
+      height: 100%;
     }
 
-    .group-details-inner {
-        padding: 140px 16vw;
+    .group-details-logo {
+      height: 0;
+      background: #ffffff;
+      box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+      height: 17.5rem;
+      width: 17.5rem;
+      position: absolute;
+      left: 16vw;
+      bottom: -5rem;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      overflow: hidden;
 
-        .group-details-website {
-            float: right;
-            font-weight: bold;
-            line-height: 23px;
-            font-size: 18px;
-
-            color: #552E91;
-
-
-
-        }
-
-        .group-details-events {
-            padding: 7.5rem 7.5rem 0 0;
-
-            .group-details-events-unit {
-                display: grid;
-                grid-template-columns: 30% auto;
-                grid-column-gap: 5%;
-
-
-                .group-details-events-image {
-                    img {
-                        width: 100%;
-                    }
-                }
-
-                .group-details-events-name {
-                    font-weight: bold;
-                    line-height: 1.5rem;
-                    font-size: 1.5rem;
-                    padding-bottom: 1rem;
-                    color: #552E91;
-                }
-
-                .group-details-events-descritpion {
-                    font-weight: 300;
-                    line-height: 1.75rem;
-                    font-size: 1rem;
-                    text-align: justify;
-
-                    color: #000000;
-                }
-
-                .group-details-events-location {
-                    font-weight: 600;
-                    line-height: 1.75rem;
-                    font-size: 1rem;
-                    text-align: justify;
-                    margin-top: 1rem;
-                    color: rgba(0, 0, 0, 0.3);
-
-                }
-            }
-        }
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        padding: 2vw;
+        height: auto;
+        width: auto;
+      }
     }
+  }
+
+  .group-details-inner {
+    padding: 140px 16vw;
+
+    .group-details-website {
+      float: right;
+      font-weight: bold;
+      line-height: 1.4375rem;
+      font-size: 1.125rem;
+
+      color: #552e91;
+    }
+
+    .group-details-events {
+      padding: 7.5rem 7.5rem 0 0;
+
+      .group-details-events-unit {
+        display: grid;
+        grid-template-columns: 30% auto;
+        grid-column-gap: 5%;
+
+        .group-details-events-image {
+          img {
+            width: 100%;
+          }
+        }
+
+        .group-details-events-name {
+          font-weight: bold;
+          line-height: 1.5rem;
+          font-size: 1.5rem;
+          padding-bottom: 1rem;
+          color: #552e91;
+        }
+
+        .group-details-events-descritpion {
+          font-weight: 300;
+          line-height: 1.75rem;
+          font-size: 1rem;
+          text-align: justify;
+
+          color: #000000;
+        }
+
+        .group-details-events-location {
+          font-weight: 600;
+          line-height: 1.75rem;
+          font-size: 1rem;
+          text-align: justify;
+          margin-top: 1rem;
+          color: rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
 }
 
-.group-details-contact-designation{
-    font-style: italic;
-font-weight: normal;
-line-height: 24px;
-font-size: 18px;
+.group-details-contact-designation {
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1.5rem;
+  font-size: 1.125rem;
 
-color: rgba(0, 0, 0, 0.5);
-padding-bottom: 23px;
+  color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 1.4375rem;
 }

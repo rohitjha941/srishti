@@ -26,8 +26,8 @@ export default class About extends Component {
             <NavLink activeClassName="about-sidebar-active" to="/about/domain">
               Domain
             </NavLink>
-            <NavLink activeClassName="about-sidebar-active" to="/about/history">
-              History
+            <NavLink activeClassName="about-sidebar-active" to="/about/vision">
+            Vision
             </NavLink>
         
           </nav>
@@ -36,7 +36,7 @@ export default class About extends Component {
         <div className="about-pages"> 
           <Route path="/about/srishti" component={AboutSrishti} />
           <Route path="/about/domain" component={Domain} />
-          <Route path="/about/history" component={History} />
+          <Route path="/about/vision" component={History} />
        
 
 

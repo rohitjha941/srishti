@@ -14,9 +14,9 @@ export default class Domain extends Component {
   render() {
     return (
       <div className="Domain">
-        <center>
-          <p className="AboutHeader">DOMAIN COVERED</p>
-        </center>
+   
+          <p className="title2">DOMAIN COVERED</p>
+     
 
         <div className="DomainArray">
           {this.state.domain.map(e => {

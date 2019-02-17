@@ -22,6 +22,11 @@ import { NavLink,withRouter } from "react-router-dom";
 
         <span>
           <ul className="navbar-items">
+
+          <li>
+              <NavLink exact to="/">Home </NavLink>
+            </li>
+
             <li>
               <NavLink to="/about">About Us </NavLink>
             </li>
