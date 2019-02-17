@@ -10,7 +10,7 @@ server {
         }
 
         location /stat/ {
-           alias /home/tinker/srishti-Website/backend/staticfiles/;
+           alias /home/tinker/srishti-Website/backend/static/;
         }
 
         location /media/ {
