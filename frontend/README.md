@@ -1,11 +1,6 @@
 Use Nginx/Apache to serve static files. 
-
 Please run python manage.py check --deploy and solve all the errors. 
-
 Do not store python code in /var/www folder 
-
-
-
 Server Configuration Nginx 
 
 server {
@@ -34,10 +29,5 @@ server {
            include proxy_params;
            proxy_pass http://unix:/home/tinker/srishti-Website/backend/backend.sock;
         }
-
- 
- 
-
-
 
 }

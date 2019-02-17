@@ -23,7 +23,7 @@ export default class Domain extends Component {
             return (
               <div key={e.id}>
                 <img src={e.image} alt={e.name} />
-                <p>{e.name}</p>
+
               </div>
             );
           })}
