@@ -219,7 +219,7 @@ export default class Home extends Component {
         </div>
 
         <Stat />
-
+{/*}
         <div className="home-sponsors">
           <div className="title">SPONSORS </div>
 
@@ -253,7 +253,7 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
-
+              */}
         <br />
 
         <div className="home-contact">
