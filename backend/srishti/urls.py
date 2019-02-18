@@ -5,13 +5,14 @@ from django.conf.urls import url, include
 from srishti import settings
 from pages.views import *
 from django.conf.urls.static import static
+from django.views.decorators.csrf import csrf_exempt
 
 
 urlpatterns = [
     path('backend/admin/', admin.site.urls),
     path('backend/group/', ListGroup.as_view()),
     path('backend/domain/', DomainList.as_view()),
-    path("backend/contact/",Contact.as_view() )
+    path("backend/contact/",csrf_exempt(Contact.as_view()) )
 ]
 
 
