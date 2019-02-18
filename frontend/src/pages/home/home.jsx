@@ -14,7 +14,7 @@ import Address from "../../static/home/address.png";
 import Left from "../../static/arrow2.png";
 import Right from "../../static/arrow1.png";
 
-import Slider_img from "../../static/home/kuchbhi.jpg";
+//import Slider_img from "../../static/home/kuchbhi.jpg";
 import {
   CarouselProvider,
   Slider,
@@ -27,23 +27,38 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 export default class Home extends Component {
   state = {
     domain: [],
+    name: null,
+    email: null,
+    phone: null,
+    message: null,
   };
   componentDidMount() {
     axios.get(backend_url + "/backend/domain/").then(res => {
       this.setState({ domain: res.data });
     });
   }
-  render() {
-    let settings = {
-      dots: false,
-      lazyLoad: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      arrows: true,
+
+  handleSubmit = e => {
+    e.preventDefault();
+
+     
+
+    let data = {
+      name: this.state.name,
+      email: this.state.email,
+      mobile: this.state.phone,
+      message: this.state.message,
     };
 
+    axios({
+      method: "post",
+      url: backend_url + "/backend/contact/",
+      data: data,
+    }).then(res => {
+      alert("We will revert back to you shortly");
+    });
+  };
+  render() {
     return (
       <div className="home">
         <div className="home-about">
@@ -124,7 +139,10 @@ export default class Home extends Component {
         <div className="home-testimonails">
           <div className="title2">TESTIMONIALS</div>
 
-          <div className="home-testimonails-data" style = {{"marginBottom" : "120px"}}>
+          <div
+            className="home-testimonails-data"
+            style={{ marginBottom: "120px" }}
+          >
             <div className="home-testimonails-data-image">
               <img
                 src="http://people.iitr.ernet.in/facultyphoto/akc_AXu3ac6.jpg"
@@ -136,7 +154,7 @@ export default class Home extends Component {
               <p>Prof. Ajit Kumar Chaturvedi</p>
               <p>Director</p>
               <p>IIT Roorkee </p>
-              
+
               <p>
                 IIT Roorkee is vehemently achieving great strides in every facet
                 of academic and cultural events. One such gem in ineffable
@@ -219,7 +237,7 @@ export default class Home extends Component {
         </div>
 
         <Stat />
-{/*}
+        {/*}
         <div className="home-sponsors">
           <div className="title">SPONSORS </div>
 
@@ -305,12 +323,40 @@ export default class Home extends Component {
           </div>
 
           <div className="home-contact-form">
-            <form>
+            <form onSubmit={this.handleSubmit}>
               <p>GET IN TOUCH!</p>
-              <input type="text" required placeholder="Name" />
-              <input type="email" required placeholder="Email" />
-              <input type="tel" required placeholder="Mobile" />
-              <input type="text" required placeholder="Message" />
+              <input
+                type="text"
+                onChange={e => {
+                  this.setState({ name: e.target.value });
+                }}
+                required
+                placeholder="Name"
+              />
+              <input
+                type="email"
+                onChange={e => {
+                  this.setState({ email: e.target.value });
+                }}
+                required
+                placeholder="Email"
+              />
+              <input
+                type="tel"
+                onChange={e => {
+                  this.setState({ phone: e.target.value });
+                }}
+                required
+                placeholder="Mobile"
+              />
+              <input
+                type="text"
+                onChange={e => {
+                  this.setState({ message: e.target.value });
+                }}
+                required
+                placeholder="Message"
+              />
               <input type="submit" />
             </form>
           </div>

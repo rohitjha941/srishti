@@ -155,3 +155,26 @@ class Domains(models.Model):
     image = models.ImageField( 
         upload_to="domain_images/", 
     )
+
+
+class Contact(models.Model):
+
+    name =  models.CharField(
+        default = "",
+        max_length = 100
+    )
+
+    email = models.CharField(
+        default = "",
+        max_length = 100
+    )
+
+    mobile = models.CharField(
+        default = "",
+        max_length = 100
+    )
+
+    message = models.CharField(
+        default = "",
+        max_length = 100
+    )

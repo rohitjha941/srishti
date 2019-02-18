@@ -24,3 +24,7 @@ class DomainsAdmin(ImportExportModelAdmin):
 @register(GroupProject)
 class DomainsAdmin(ImportExportModelAdmin):
     list_display =  ('project_name', 'project_description', 'project_image', )
+
+@register(Contact)
+class DomainsAdmin(ImportExportModelAdmin):
+    list_display = ('name', 'email', 'mobile', 'message', )  

@@ -10,7 +10,7 @@ import Groups from "./pages/groups/group";
 import GoupDetails from "./pages/groups_details/index"
 import About from "./pages/about";
 import Achievement from "./pages/achievement/achievement";
-
+import Footer from "./compo/footer/footer"
 class Main extends Component {
   render() {
     return (
@@ -24,6 +24,7 @@ class Main extends Component {
             <Route path = "/about" component = {About} />
             <Route path = "/achievements" component = {Achievement} />
           </Switch>
+          <Footer />
         </>
       </Router>
     );

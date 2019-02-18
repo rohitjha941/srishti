@@ -11,6 +11,7 @@ urlpatterns = [
     path('backend/admin/', admin.site.urls),
     path('backend/group/', ListGroup.as_view()),
     path('backend/domain/', DomainList.as_view()),
+    path("backend/contact/",Contact.as_view() )
 ]
 
 

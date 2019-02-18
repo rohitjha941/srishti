@@ -37,3 +37,10 @@ class DomainSerializers(serializers.ModelSerializer):
     class Meta:
         model = Domains
         fields = "__all__"
+
+
+class  ContactSerializers(serializers.ModelSerializer):
+    
+    class Meta:
+        model = Contact
+        fields = "__all__"
