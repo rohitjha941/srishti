@@ -8,36 +8,36 @@
         width: 100%;
         align-items: center;
         justify-items: center;
-
         nav {
-
-            width: 100%;
-
+ /*
+            position: fixed;
+            left: -4vw;
+            top: 20%; 
+            */
             a {
                 transform: rotate(-90deg);
                 display: inline-block;
                 width: 100%;
-                margin-top: 7vh;
+                margin-top: 4vh;
+                margin-bottom: 4vh;
                 font-weight: 600;
-
                 font-size: 1rem;
                 text-decoration: none !important;
                 color: #212121;
                 padding: 0 !important;
-
             }
 
-            a:hover{
+            a:hover {
                 text-decoration: none;
 
             }
 
-            .about-sidebar-active{
+            .about-sidebar-active {
                 font-weight: 800;
-line-height: 20px;
-font-size: 16px;
+                line-height: 20px;
+                font-size: 16px;
 
-color: #552E91;
+                color: #552E91;
             }
 
         }

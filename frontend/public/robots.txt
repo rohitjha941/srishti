@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://stc.iitr.ac.in/sitemap.xml
