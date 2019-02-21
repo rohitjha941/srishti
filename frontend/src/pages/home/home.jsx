@@ -13,6 +13,7 @@ import Mail from "../../static/home/mail.png";
 import Address from "../../static/home/address.png";
 import Left from "../../static/arrow2.png";
 import Right from "../../static/arrow1.png";
+import Drone from "../../static/home/drone.png"
 
 //import Slider_img from "../../static/home/kuchbhi.jpg";
 import {
@@ -40,9 +41,6 @@ export default class Home extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-
-     
-
     let data = {
       name: this.state.name,
       email: this.state.email,
@@ -84,8 +82,8 @@ export default class Home extends Component {
             <Carousel autoplay={true}>
               <div className="slidder_temp">
                 <img
-                  src="https://tinkeringlab.iitr.ac.in/media/auto/events/1.JPG"
-                  alt="Tinkering Lab "
+                  src={Drone}
+                  alt="Drone"
                 />
               </div>
               {/*
@@ -160,7 +158,7 @@ export default class Home extends Component {
                 of academic and cultural events. One such gem in ineffable
                 jewellery of events is Srishti. <br />
                 In a world where technology plays a pivotal role, IIT Roorkee
-                had been organizing Srishti, the Annual Technical Exhibition.
+                has been organizing Srishti, the Annual Technical Exhibition.
                 Innate competence of IITians to bring ideas into reality casts
                 Srishti into new vibrant forms every year. Since its inception
                 in 1958, Srishti has grown into a wonderful tree of creativity
@@ -204,9 +202,9 @@ export default class Home extends Component {
               <p>IIT Roorkee </p>
               <p>
                 It has been in the bones of IIT Roorkee to take the road less
-                travelled and emerge victoriously. Our recent achievements in
+                travelled and emerge victoriously. Our recent achievements at
                 Inter IIT Tech Meet 2018 are concrete proof of the fact. For
-                more than 50 years IIT Roorkee had been organizing Srishti, to
+                more than 50 years IIT Roorkee has been organizing Srishti, to
                 showcase the talent and creativity of our fellow students and it
                 has been an ever-growing legacy.
                 <br />

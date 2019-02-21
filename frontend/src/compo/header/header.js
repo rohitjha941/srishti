@@ -34,10 +34,10 @@ import { NavLink,withRouter } from "react-router-dom";
             <li>
               <NavLink to="/groups">Our Groups</NavLink>
             </li>
-
+{/*}
             <li>
               <NavLink to="/achievements">Achievements</NavLink>
-            </li>
+    </li>*/}
           </ul>
         </span>
       </div>

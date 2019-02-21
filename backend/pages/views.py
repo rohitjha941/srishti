@@ -6,7 +6,7 @@ from rest_framework.response import Response
 
 
 class ListGroup(generics.ListAPIView):
-    queryset = Groups.objects.all()
+    queryset = Groups.objects.all().order_by("name")
     serializer_class = GroupsSerializer
 
 class DomainList(generics.ListAPIView):

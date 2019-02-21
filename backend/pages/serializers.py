@@ -30,6 +30,7 @@ class GroupsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Groups
         fields = "__all__"
+         
 
 
 
