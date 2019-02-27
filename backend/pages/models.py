@@ -15,7 +15,7 @@ class Groups(models.Model):
 
     description = models.TextField(
         default= "",
-        max_length = 10000,
+        max_length = 100000,
         verbose_name = "Group Descritption"
     )
 
@@ -94,7 +94,7 @@ class GroupEvents(models.Model):
 
     event_description =  models.TextField(
         default= "",
-        max_length = 1000,
+        max_length = 100000,
         verbose_name = "Event Description"
     )
     event_image =  models.ImageField( 
@@ -132,7 +132,7 @@ class GroupProject(models.Model):
 
     project_description =  models.TextField(
         default= "",
-        max_length = 1000,
+        max_length = 100000,
         verbose_name = "Event Description"
     )
     project_image =  models.ImageField( 
@@ -153,13 +153,13 @@ class GroupHeader(models.Model):
     )
 
     title = models.CharField( 
-        max_length=500,
+        max_length=50000,
         default = ""
     )
 
 
     description = models.CharField( 
-        max_length=500,
+        max_length=500000,
         default = ""
     )
 
