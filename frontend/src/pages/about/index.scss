@@ -1,6 +1,6 @@
 .about {
     display: grid;
-    grid-template-columns: 4% auto;
+ 
 
     .about-sidebar {
         height: 75vh;
@@ -9,17 +9,17 @@
         align-items: center;
         justify-items: center;
         nav {
- /*
-            position: fixed;
-            left: -4vw;
-            top: 20%; 
-            */
+ 
+          position: fixed;
+          top:50vh;
+          transform: rotate(-90deg);
+          left:-8vw;
+         
+       
             a {
-                transform: rotate(-90deg);
-                display: inline-block;
-                width: 100%;
-                margin-top: 4vh;
-                margin-bottom: 4vh;
+             
+                display: inline;
+                margin-right:4rem;
                 font-weight: 600;
                 font-size: 1rem;
                 text-decoration: none !important;

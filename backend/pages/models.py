@@ -15,7 +15,7 @@ class Groups(models.Model):
 
     description = models.TextField(
         default= "",
-        max_length = 1000,
+        max_length = 10000,
         verbose_name = "Group Descritption"
     )
 
@@ -143,6 +143,25 @@ class GroupProject(models.Model):
 
 
 
+class GroupHeader(models.Model):
+    group = models.ForeignKey(
+        Groups,
+        on_delete=models.CASCADE,
+        blank=True, 
+        null=True,
+        related_name ="header"
+    )
+
+    title = models.CharField( 
+        max_length=500,
+        default = ""
+    )
+
+
+    description = models.CharField( 
+        max_length=500,
+        default = ""
+    )
 
 
 

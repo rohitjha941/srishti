@@ -7,24 +7,24 @@ export default class Footer extends Component {
   render() {
     return (
       <div className="footer">
-        <div className="footer-iitr-logo">
+        <div className="logo logo-border-right">
           <a target ="_blank"  rel="noopener noreferrer" href="http://iitr.ac.in">
             <img src={iitr} alt="IIT Roorkee Logo" />
           </a>
         </div>
 
-        <div className="footer-stc-logo">
+        <div className="logo logo-border-right  ">
           <img src={stc} alt="STC Logo" />
         </div>
 
-        <div className="footer-srishti-logo">
+        <div className="logo">
           <img src={srishti} alt="Srishti Logo" />
         </div>
 
         <div className="footer-coordinator">
-          <p className="header">Overall Co-ordinator</p>
+          <p className="header">Overall Coordinator</p>
           <p className="name">Anant Vashistha</p>
-          <p className="email"> avashistha@me.iitr.ac.in</p>
+          <p className="email"> oc.srishti@iitr.ac.in</p>
         </div>
 
         <div className="footer-coordinator">

@@ -10,22 +10,49 @@
         a {
             display: block;
             padding-bottom: 1em;
-            font-style: normal;
-            font-weight: 800;
+            font-style: italic;
+            font-weight: 600;
             line-height: 18px;
             font-size: 16px;
             color: #FFFFFF;
+
 
         }
     }
 
     img{
         max-width: 90%;
+        position: relative;
+        
+    }
+
+    .logo{
+        
+        display: grid;
+        align-self: center;
+        justify-items: center;
+    }
+ 
+    .logo-border-right{
+        position: relative;
+        display: grid;
+        align-items: center;
+
+        
+    }
+
+    .logo-border-right::after{
+        content: "";
+        border-right: 2px solid white;
+        height:2rem;
+        justify-self: end;
+        position: absolute;
+
     }
 
     .footer-coordinator {
         .header {
-            font-weight: 900;
+            font-weight: 800;
             line-height: 24px;
             font-size: 16px;
             color: #FFFFFF;
@@ -47,7 +74,8 @@
             line-height: 24px;
             font-size: 16px;
             margin-bottom: 0.2em;
-            color: #FFFFFF;
+            color: rgba(255,255,255,0.8);
+            
 
         }
 

@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 import "./groups_details.scss";
 import Line from "../../static/home/Line.png";
-import phone from "../../static/phone.png"
-import email from "../../static/email.png"
+import phone from "../../static/phone.png";
+import email from "../../static/email.png";
+import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+
 export default class GoupDetails extends Component {
   render() {
     let data = this.props.location.state.groups;
+
+    console.log(data)
     return (
       <div className="group-details">
     
@@ -88,8 +92,19 @@ export default class GoupDetails extends Component {
           )}
 
 
+{data.header.map(e=>{
+  return(
+    <div className = "group-details-events">
+      <div className = "title2">
+    {e.title}
+      </div>
 
-
+      <div className = "title-description">
+{ReactHtmlParser(e.description)}
+      </div>
+    </div>
+  )
+})}
 {data.members.length === 0 ? null : (
             <div className="group-details-events">
               <div className="title2">Contact Us</div>

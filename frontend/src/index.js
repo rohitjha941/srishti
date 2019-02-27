@@ -10,12 +10,13 @@ import Groups from "./pages/groups/group";
 import GoupDetails from "./pages/groups_details/index"
 import About from "./pages/about";
 import Achievement from "./pages/achievement/achievement";
-import Footer from "./compo/footer/footer"
+import Footer from "./compo/footer/footer";
+import Scroll from "./compo/scrolltotop"
 class Main extends Component {
   render() {
     return (
       <Router>
-        <>
+        <Scroll>
           <Nav />
           <Switch>
             <Route path="/" exact = {true} component={Home} />
@@ -25,7 +26,7 @@ class Main extends Component {
             <Route path = "/achievements" component = {Achievement} />
           </Switch>
           <Footer />
-        </>
+        </Scroll>
       </Router>
     );
   }

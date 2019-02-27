@@ -1,5 +1,5 @@
     .home {
-        margin-top: 7.5rem;
+        margin-top: 8rem;
 
         .home-about {
 
@@ -23,9 +23,7 @@
                 color: #552E91;
             }
 
-            .home-about-content {
-                padding-top: 5vh;
-            }
+           
         }
 
         .home-domains {
@@ -138,6 +136,7 @@
         .home-sponsors {
             background: #F6F7F8;
             margin-left: 18%;
+            margin-right:8vw;
             padding-top:30px;
             .home-sponsors-div {
                
@@ -157,7 +156,8 @@
                     grid-template-columns: repeat(5,18%);
                     grid-row-gap: 2vw;
                     grid-column-gap: 1vw;
-                    padding-top: 5vh;
+                    padding-top: 10vh;
+                    padding-bottom: 2vh;
                     align-items: center;
                     justify-items: center;
 
@@ -169,7 +169,7 @@
                         border-radius: 50%;
 
                         img {
-                            width: 100%;
+                            max-width: 100%;
                         }
                     }
                 }
@@ -181,7 +181,7 @@
             margin-left: 18%;
             margin-right: 8vw;
             display: grid;
-            grid-template-columns: auto 45%;
+            grid-template-columns: auto 50%;
             padding: 40px 0 40px 0;
 
             .home-contact-form {

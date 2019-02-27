@@ -10,7 +10,7 @@ class ListGroup(generics.ListAPIView):
     serializer_class = GroupsSerializer
 
 class DomainList(generics.ListAPIView):
-    queryset = Domains.objects.all()
+    queryset = Domains.objects.all().order_by("name")
     serializer_class = DomainSerializers
 
 

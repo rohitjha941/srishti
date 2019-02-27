@@ -28,3 +28,12 @@ class DomainsAdmin(ImportExportModelAdmin):
 @register(Contact)
 class DomainsAdmin(ImportExportModelAdmin):
     list_display = ('name', 'email', 'mobile', 'message', )  
+
+
+
+@register(GroupHeader)
+class DomainsAdmin(ImportExportModelAdmin):
+    list_display =('title', 'description','GroupName' ) 
+
+    def GroupName(self,obj):
+        return obj.group.name

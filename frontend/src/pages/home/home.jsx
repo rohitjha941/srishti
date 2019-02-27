@@ -13,7 +13,9 @@ import Mail from "../../static/home/mail.png";
 import Address from "../../static/home/address.png";
 import Left from "../../static/arrow2.png";
 import Right from "../../static/arrow1.png";
-import Drone from "../../static/home/drone.png"
+import Drone from "../../static/home/drone.png";
+
+
 
 //import Slider_img from "../../static/home/kuchbhi.jpg";
 import {
@@ -235,41 +237,48 @@ export default class Home extends Component {
         </div>
 
         <Stat />
-        {/*}
+       
         <div className="home-sponsors">
-          <div className="title">SPONSORS </div>
+          <div className="title">FORMER SPONSORS </div>
 
           <div className="home-sponsors-div">
             <div className="home-sponsors-array">
               <div>
                 <img
-                  src="https://www.coca-cola.com/content/dam/GO/CokeZone/Common/global/logo/logodesktop/coca-cola-logo-260x260.png"
+                  src={require('../../static/home/sponsors/coke.png')}
                   alt="Coke cola"
                 />
               </div>
               <div>
                 <img
-                  src="https://www.hcltech.com/sites/default/files/styles/large/public/images/guideline_based1.png?itok=JdASqCkG"
+                  src={require('../../static/home/sponsors/hcl.png')}
                   alt="HCL"
                 />
               </div>
               <div>
                 <img
-                  src="https://commons.wikimedia.org/wiki/File:Samsung_Logo.svg"
+                  src={require('../../static/home/sponsors/samsung.png')}
                   alt="Samsung"
                 />
               </div>
               <div>
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/en/1/14/Bharti_Airtel_Limited.svg"
+                  src={require('../../static/home/sponsors/airtel.png')}
                   alt="Airtel"
+                />
+              </div>
+
+              <div>
+                <img
+                  src={require('../../static/home/sponsors/AMD.png')}
+                  alt="AMD"
                 />
               </div>
               <div />
             </div>
           </div>
         </div>
-              */}
+        
         <br />
 
         <div className="home-contact">
@@ -296,8 +305,8 @@ export default class Home extends Component {
                 <div className="item2">
                   <div className="item2-title">Email</div>
                   <div className="item2-des">
-                    <a href="mailto:apatidar@me.iitr.ac.in">
-                      apatidar@me.iitr.ac.in
+                    <a href="mailto:srishti@iitr.ac.in">
+                      srishti@iitr.ac.in
                     </a>
                   </div>
                 </div>

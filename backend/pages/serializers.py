@@ -21,12 +21,17 @@ class GroupProjectsSerializer(serializers.ModelSerializer):
         model = GroupProject
         fields =  ('project_name', 'project_description', 'project_image', )
 
+class GroupHeaderSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = GroupHeader
+        fields = ('title', 'description', 'id' )
 
         
 class GroupsSerializer(serializers.ModelSerializer):    
     members = GroupMembersSerializer( many =True, allow_null = True)
     events = GroupEventsSerializer(many =True ,  allow_null = True)
     projects = GroupProjectsSerializer(many = True,)
+    header = GroupHeaderSerializer(many = True)
     class Meta:
         model = Groups
         fields = "__all__"
