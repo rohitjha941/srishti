@@ -125,29 +125,26 @@ export default class Home extends Component {
         {this.state.projects.length === 0 ? null : (
           <div className="home-projects">
             <div className="title2">UPCOMING PROJECTS</div>
-<br /><br /><br />
+            <br />
+            <br />
+            <br />
             {this.state.projects.map(e => {
-              return(
-              <div key = {e.id} className="home-project-unit">
-                <div className="home-project-image">
-                  <img src={e.image} alt={e.name} />
-                </div>
+              return (
+                <div key={e.id} className="home-project-unit">
+                  <div className="home-project-image">
+                    <img src={e.image} alt={e.name} />
+                  </div>
 
-                <div className="home-project-details">
-                  <div className="home-project-title">{e.name}</div>
+                  <div className="home-project-details">
+                    <div className="home-project-title">{e.name}</div>
 
-                  <div className="home-project-description" >
-                  {ReactHtmlParser(e.desciptiom)}
+                    <div className="home-project-description">
+                      {ReactHtmlParser(e.desciptiom)}
+                    </div>
                   </div>
                 </div>
-              </div>);
+              );
             })}
-
- 
-
- 
-
-
           </div>
         )}
         <div className="home-testimonails">
@@ -170,29 +167,15 @@ export default class Home extends Component {
               <p>IIT Roorkee </p>
 
               <p>
-                IIT Roorkee is vehemently achieving great strides in every facet
-                of academic and cultural events. One such gem in ineffable
-                jewellery of events is Srishti. <br />
-                In a world where technology plays a pivotal role, IIT Roorkee
-                has been organizing Srishti, the Annual Technical Exhibition.
-                Innate competence of IITians to bring ideas into reality casts
-                Srishti into new vibrant forms every year. Since its inception
-                in 1958, Srishti has grown into a wonderful tree of creativity
-                where our core values stand deeply rooted. Our efforts to make
-                IIT Roorkee a prominent institute of higher education on a
-                global stage, Srishti is one of those events which promises a
-                bright future for the Institute. Groups compete with each other
-                in an inexorable competition where robots of ASME or MaRs taste
-                the metal of their rival and RC Plane of SAE thunders in the sky
-                like a dragon. Srishti is also packed with groups like MDG and
-                SDS labs where the brilliance of artificial intelligence and
-                data analysis mesmerizes us.
-                <br />
-                On this note, I heartily congratulate all the participants of
-                Srishti for their vigour and stand in full support of efforts
-                from all the students and staff to bring this event to life.
-                Team Srishti has pumped in their immetrical efforts to give
-                Srishti 2019 its wings of fire.
+                Lorem ipsum dolor sit amet, suscipit sagittis cras accumsan enim
+                quam sem, vivamus nulla mattis phasellus et interdum, cursus
+                ipsum eum eros integer massa, nam magna lacinia felis. Massa
+                nostra nulla imperdiet ipsum. Aliquam maecenas ultricies. Felis
+                suspendisse sit ut. Sit a semper egestas, ipsum justo tristique
+                amet rutrum donec, suspendisse eros rutrum luctus, risus
+                volutpat in. Nunc vitae dui, lacus et lorem id neque laoreet id,
+                ut aliquam lectus nullam leo, sit libero amet. Nullam quis
+                suspendisse maecenas erat donec,
               </p>
             </div>
 
