@@ -3,11 +3,7 @@ import "./groups_details.scss";
 import Line from "../../static/home/Line.png";
 import phone from "../../static/phone.png";
 import email from "../../static/email.png";
-import ReactHtmlParser, {
-  processNodes,
-  convertNodeToElement,
-  htmlparser2,
-} from "react-html-parser";
+import ReactHtmlParser  from "react-html-parser";
 
 export default class GoupDetails extends Component {
   render() {
@@ -25,12 +21,12 @@ export default class GoupDetails extends Component {
         </div>
 
         <div className="group-details-inner">
-          <div className="title2">{data.name}</div>{" "}
+          <div className="title2">{data.name}</div>
           <span className="group-details-website">
-            {" "}
+            
             <a target="_blank" rel="noopener noreferrer" href={data.web_url}>
-              {" "}
-              Visit Website <img src={Line} alt="" />{" "}
+              
+              Visit Website <img src={Line} alt="" />
             </a>
           </span>
           <div className="group-details-description">{data.description}</div>

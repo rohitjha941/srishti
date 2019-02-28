@@ -50,3 +50,9 @@ class  ContactSerializers(serializers.ModelSerializer):
     class Meta:
         model = Contact
         fields = "__all__"
+
+class  HomeProjectSerializers(serializers.ModelSerializer):
+    
+    class Meta:
+        model = HomeProject
+        fields = "__all__"

@@ -29,7 +29,9 @@ class DomainsAdmin(ImportExportModelAdmin):
 class DomainsAdmin(ImportExportModelAdmin):
     list_display = ('name', 'email', 'mobile', 'message', )  
 
-
+@register(HomeProject)
+class HomeProjectAdmin(ImportExportModelAdmin):
+    list_display = ('name', 'desciptiom' )  
 
 @register(GroupHeader)
 class DomainsAdmin(ImportExportModelAdmin):

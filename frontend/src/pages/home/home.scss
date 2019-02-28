@@ -6,12 +6,13 @@
             display: grid;
             grid-template-columns: 50% 45%;
             grid-column-gap: 5%;
+
             p:nth-child(2) {
 
                 font-weight: 300;
                 line-height: 1.75rem;
                 font-size: 1.125rem;
-                padding:0 5vw 0 0 ;
+                padding: 0 5vw 0 0;
                 color: #000000;
 
             }
@@ -23,14 +24,11 @@
                 color: #552E91;
             }
 
-           
         }
 
         .home-domains {
 
-
             .home-domain-slidder {
-
 
                 img {
                     width: 25vw;
@@ -38,7 +36,6 @@
 
                 .home-domain-slidder-parent {
                     position: relative;
-
 
                     .carousel__back-button,
                     .carousel__next-button {
@@ -52,21 +49,17 @@
                         img {
                             width: 1vw;
 
-
-
                         }
                     }
 
-                   
                     .carousel__next-button {
                         right: 0;
                     }
 
-                    .carousel__back-button{
-                        left:-4vw;
+                    .carousel__back-button {
+                        left: -4vw;
                     }
                 }
-
 
             }
         }
@@ -93,8 +86,7 @@
                 }
 
                 .home-testimonails-data-details {
-             
-                    p:nth-child(4){
+                    p:nth-child(4) {
                         font-weight: 300;
                         line-height: 1.75rem;
                         font-size: 1.125rem;
@@ -111,17 +103,17 @@
 
                     }
 
-                    p:nth-child(3),
-                    p:nth-child(2) {
+                    p:nth-child(2),
+                    p:nth-child(3) {
                         font-style: italic;
                         font-weight: normal;
                         line-height: 24px;
                         font-size: 16px;
-                        margin-bottom: 0rem;
+                        margin-bottom: 0;
                         color: rgba(0, 0, 0, 0.5);
                     }
 
-                    p:nth-child(3){
+                    p:nth-child(3) {
                         margin-bottom: 1rem;
                     }
                 }
@@ -129,18 +121,15 @@
             }
         }
 
-   
- 
-
-
         .home-sponsors {
             background: #F6F7F8;
             margin-left: 18%;
-            margin-right:8vw;
-            padding-top:30px;
+            margin-right: 8vw;
+            padding-top: 30px;
+
             .home-sponsors-div {
-               
-                padding: 0 3% 5% 3%;
+
+                padding: 0 3% 5%;
                 grid-column-gap: 5vw;
 
                 .home-sponsors-description {
@@ -153,7 +142,7 @@
 
                 .home-sponsors-array {
                     display: grid;
-                    grid-template-columns: repeat(5,18%);
+                    grid-template-columns: repeat(5, 18%);
                     grid-row-gap: 2vw;
                     grid-column-gap: 1vw;
                     padding-top: 10vh;
@@ -182,7 +171,7 @@
             margin-right: 8vw;
             display: grid;
             grid-template-columns: auto 50%;
-            padding: 40px 0 40px 0;
+            padding: 40px 0;
 
             .home-contact-form {
                 position: relative;
@@ -190,11 +179,10 @@
 
                 form {
 
-
                     position: absolute;
 
                     background: #FFFFFF;
-                    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.15);
+                    box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
                     border-radius: 2px;
 
                     padding: 80px;
@@ -202,7 +190,6 @@
                     top: -20%;
                     bottom: -20%;
                     text-align: center;
-
 
                     p {
                         font-weight: bold;
@@ -244,7 +231,7 @@
             }
 
             .home-contact-array {
-                padding: 60px 80px 0 80px;
+                padding: 60px 80px 0;
             }
 
             .home-contact-item {
@@ -277,7 +264,6 @@
                         line-height: 24px;
                         font-size: 16px;
 
-
                         color: #5E5B5B;
 
                     }
@@ -285,10 +271,9 @@
             }
         }
 
-        .home-sponsors,
         .home-about,
         .home-contact,
-        
+        .home-sponsors,
         .home-testimonails {
             margin-bottom: 12.5rem;
 
@@ -300,18 +285,78 @@
             padding: 0 8vw;
         }
 
-       
-
     }
 
-
-
-
-    .slidder_temp{
-        img{
-            width:100%;
+    .slidder_temp {
+        img {
+            width: 100%;
         }
     }
 
+    .home-projects {
+        margin: 72px 8vw;
 
- 
+
+        .home-project-unit {
+            display: grid;
+            background: #ECECEC;
+            padding: 0 50px;
+            margin: 0 0 10% 0;
+            grid-template-columns: 30% auto;
+            grid-column-gap: 3vw;
+            max-width: 100%;
+
+            .home-project-image {
+                grid-column: 1;
+                align-self: center;
+                height: 100%;
+
+                img {
+                    height: 120%;
+                    width:100%;
+                    margin-top: -10%;
+                    margin-bottom: -10%;
+                }
+            }
+
+            .home-project-details {
+                grid-column: 2;
+                padding: 50px 0;
+
+                .home-project-title {
+                    font-weight: 600;
+                    line-height: 1.75rem;
+                    font-size: 1.75rem;
+                    margin-bottom: 1em;
+                    color: #552E91;
+
+                }
+
+                .home-project-description {
+                    font-weight: 300;
+                    line-height: 1.75rem;
+                    font-size: 1.125rem;
+
+                    color: #1D1D1D;
+
+                }
+            }
+        }
+
+        .home-project-unit:nth-child(2n) {
+            grid-template-columns: auto 30%;
+
+
+            .home-project-details {
+                grid-column: 1;
+                grid-row: 1;
+            }
+
+            .home-project-image {
+                grid-column: 2;
+
+                grid-row: 1;
+            }
+
+        }
+    }

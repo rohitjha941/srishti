@@ -11,21 +11,8 @@ import Stat from "../about/stat/stat";
 import Phone from "../../static/home/phone.png";
 import Mail from "../../static/home/mail.png";
 import Address from "../../static/home/address.png";
-import Left from "../../static/arrow2.png";
-import Right from "../../static/arrow1.png";
+import ReactHtmlParser from "react-html-parser";
 import Drone from "../../static/home/drone.png";
-
-
-
-//import Slider_img from "../../static/home/kuchbhi.jpg";
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  ButtonBack,
-  ButtonNext,
-} from "pure-react-carousel";
-import "pure-react-carousel/dist/react-carousel.es.css";
 
 export default class Home extends Component {
   state = {
@@ -34,10 +21,11 @@ export default class Home extends Component {
     email: null,
     phone: null,
     message: null,
+    projects: [],
   };
   componentDidMount() {
-    axios.get(backend_url + "/backend/domain/").then(res => {
-      this.setState({ domain: res.data });
+    axios.get(backend_url + "/backend/home-projects/").then(res => {
+      this.setState({ projects: res.data });
     });
   }
 
@@ -83,10 +71,7 @@ export default class Home extends Component {
           <div>
             <Carousel autoplay={true}>
               <div className="slidder_temp">
-                <img
-                  src={Drone}
-                  alt="Drone"
-                />
+                <img src={Drone} alt="Drone" />
               </div>
               {/*
               <div className="slidder_temp">
@@ -97,7 +82,7 @@ export default class Home extends Component {
             </Carousel>
           </div>
         </div>
-
+        {/*
         <div className="home-domains">
           <div className="title2">DOMAINS</div>
           <span className="ViewAll">
@@ -105,7 +90,7 @@ export default class Home extends Component {
               View All <img src={Line} alt="" />
             </NavLink>
           </span>
-
+ 
           <div className="home-domain-slidder">
             <CarouselProvider
               naturalSlideWidth={100}
@@ -135,7 +120,36 @@ export default class Home extends Component {
             </CarouselProvider>
           </div>
         </div>
+              */}
 
+        {this.state.projects.length === 0 ? null : (
+          <div className="home-projects">
+            <div className="title2">UPCOMING PROJECTS</div>
+<br /><br /><br />
+            {this.state.projects.map(e => {
+              return(
+              <div key = {e.id} className="home-project-unit">
+                <div className="home-project-image">
+                  <img src={e.image} alt={e.name} />
+                </div>
+
+                <div className="home-project-details">
+                  <div className="home-project-title">{e.name}</div>
+
+                  <div className="home-project-description" >
+                  {ReactHtmlParser(e.desciptiom)}
+                  </div>
+                </div>
+              </div>);
+            })}
+
+ 
+
+ 
+
+
+          </div>
+        )}
         <div className="home-testimonails">
           <div className="title2">TESTIMONIALS</div>
 
@@ -237,7 +251,7 @@ export default class Home extends Component {
         </div>
 
         <Stat />
-       
+
         <div className="home-sponsors">
           <div className="title">FORMER SPONSORS </div>
 
@@ -245,32 +259,32 @@ export default class Home extends Component {
             <div className="home-sponsors-array">
               <div>
                 <img
-                  src={require('../../static/home/sponsors/coke.png')}
+                  src={require("../../static/home/sponsors/coke.png")}
                   alt="Coke cola"
                 />
               </div>
               <div>
                 <img
-                  src={require('../../static/home/sponsors/hcl.png')}
+                  src={require("../../static/home/sponsors/hcl.png")}
                   alt="HCL"
                 />
               </div>
               <div>
                 <img
-                  src={require('../../static/home/sponsors/samsung.png')}
+                  src={require("../../static/home/sponsors/samsung.png")}
                   alt="Samsung"
                 />
               </div>
               <div>
                 <img
-                  src={require('../../static/home/sponsors/airtel.png')}
+                  src={require("../../static/home/sponsors/airtel.png")}
                   alt="Airtel"
                 />
               </div>
 
               <div>
                 <img
-                  src={require('../../static/home/sponsors/AMD.png')}
+                  src={require("../../static/home/sponsors/AMD.png")}
                   alt="AMD"
                 />
               </div>
@@ -278,7 +292,7 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
-        
+
         <br />
 
         <div className="home-contact">
@@ -305,9 +319,7 @@ export default class Home extends Component {
                 <div className="item2">
                   <div className="item2-title">Email</div>
                   <div className="item2-des">
-                    <a href="mailto:srishti@iitr.ac.in">
-                      srishti@iitr.ac.in
-                    </a>
+                    <a href="mailto:srishti@iitr.ac.in">srishti@iitr.ac.in</a>
                   </div>
                 </div>
               </div>

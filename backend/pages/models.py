@@ -197,3 +197,19 @@ class Contact(models.Model):
         default = "",
         max_length = 100
     )
+    
+
+class HomeProject(models.Model):
+    name = models.CharField(
+        default = "",
+        max_length = 100
+    )
+
+    desciptiom = models.CharField(
+        default = "",
+        max_length = 10000
+    )
+
+    image = models.ImageField( 
+        upload_to="home_project_images/", 
+    )

@@ -22,3 +22,8 @@ class Contact(APIView):
             serializer.save()
             return Response (status=status.HTTP_200_OK)
         return Response (status = status.HTTP_400_BAD_REQUEST)
+
+
+class HomeProjectList(generics.ListAPIView):
+    queryset = HomeProject.objects.all().order_by("name")
+    serializer_class = HomeProjectSerializers

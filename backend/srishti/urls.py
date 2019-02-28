@@ -12,7 +12,8 @@ urlpatterns = [
     path('backend/admin/', admin.site.urls),
     path('backend/group/', ListGroup.as_view()),
     path('backend/domain/', DomainList.as_view()),
-    path("backend/contact/",csrf_exempt(Contact.as_view()) )
+    path('backend/home-projects/', HomeProjectList.as_view()),
+    path("backend/contact/",csrf_exempt(Contact.as_view()) ),
 ]
 
 
