@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+
 import "./index.scss";
 import AboutSrishti from "./Srishti/srishti";
-import { Route, Redirect } from "react-router-dom";
+
 import Domain from "./domain/domain";
 import History from "./history/history";
 
