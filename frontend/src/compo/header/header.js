@@ -24,28 +24,26 @@ class Nav extends Component {
         <span>
           <NavLink to="/">
             <img src={Logo} alt="Srishti Logo" />
-          </NavLink>{" "}
+          </NavLink>
         </span>
         <span>
           <ul className="navbar-items">
             <li>
               <NavLink exact to="/">
-                {" "}
-                Home{" "}
-              </NavLink>{" "}
+                Home
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/about"> About Us </NavLink>{" "}
+              <NavLink to="/about"> About Us </NavLink>
             </li>
             <li>
-              <NavLink to="/groups"> Our Groups </NavLink>{" "}
-            </li>{" "}
-            {/*}
-                    <li>
-                      <NavLink to="/achievements">Achievements</NavLink>
-            </li>*/}{" "}
-          </ul>{" "}
-        </span>{" "}
+              <NavLink to="/groups"> Our Groups </NavLink>
+            </li>
+            <li>
+              <NavLink to="/achievements"> Achievements </NavLink>
+            </li>
+          </ul>
+        </span>
       </div>
     );
   }

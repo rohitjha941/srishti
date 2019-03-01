@@ -1,0 +1,53 @@
+.ach {
+    padding: 122px 220px;
+
+    .ach-array {
+
+        background: url("../../static/achievement/acg.png");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+
+    li {
+        font-weight: 300;
+        line-height: 28px;
+        font-size: 18px;
+        padding: 10px 0;
+        color: #000000;
+
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    ul li::before {
+        content: "\2022";
+        color: #552E91;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+}
+
+.ach-flow-chart {
+    padding: 122px 220px;
+
+    img {
+        display: block;
+        width: 80%;
+        padding-top: 5vh;
+    }
+}
+
+
+.many-more {
+    font-style: italic;
+    font-weight: 900;
+    line-height: 28px;
+    font-size: 18px;
+
+    color: #552E91;
+
+}
