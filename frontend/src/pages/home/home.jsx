@@ -55,6 +55,7 @@ export default class Home extends Component {
               60<sup>th</sup> Srishti - Diamond Jubilee
             </p>
             <p>
+              <div> <b> 09-10 March’19</b> </div>
               Srishti is the Annual Technical Exhibition of IIT Roorkee that
               aims towards integrating all realms of technical activities
               conducted within the R-land. Since its inception in 1958, Srishti
