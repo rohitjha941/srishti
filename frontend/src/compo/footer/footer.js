@@ -29,7 +29,7 @@ export default class Footer extends Component {
 
         <div className="footer-coordinator">
           <p className="header">Faculty Advisor</p>
-          <p className="name">Prof. Avlokita Agarwal</p>
+          <p className="name">Prof. Avlokita Agrawal</p>
           <p className="email">avliafap@iitr.ac.in</p>
         </div>
 
