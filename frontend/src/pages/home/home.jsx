@@ -147,6 +147,8 @@ export default class Home extends Component {
             })}
           </div>
         )}
+
+        {/*
         <div className="home-testimonails">
           <div className="title2">TESTIMONIALS</div>
 
@@ -232,7 +234,7 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
-
+        */}
         <Stat />
 
         <div className="home-sponsors">
