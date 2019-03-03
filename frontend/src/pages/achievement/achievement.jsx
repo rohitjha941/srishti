@@ -10,7 +10,7 @@ export default class Achievement extends Component {
       <div>
         <img style={{ width: "100%" }} src={Top} alt="" />
 
-        <div className="ach">calendercalender
+        <div className="ach">
           <div className="title2">IIT Roorkee Tech. Achievements</div>
           <div className="ach-array">
             <div>
