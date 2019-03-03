@@ -33,12 +33,17 @@ export default class Achievement extends Component {
                 <li>Winners, World Data Science Competition </li>
                 <li>World Finalist, Valeo Innovation Challenge 2017</li>
                 <li>Global Winners, Go Green City Challenge 2017</li>
+                <li>
+                  SDS InfoSecIITR won the CSAW CTF 2018 India zonals, and stood
+                  among the top 10 in the world
+                </li>
+                <li>
+                  SDS PAG qualified for ACM ICPC World Finals 6th year in a row
+                </li>
 
-                <p className = "many-more">And many more...</p>
+                <p className="many-more">And many more...</p>
               </ul>
             </div>
-
-           
           </div>
         </div>
 
