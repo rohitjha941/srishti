@@ -150,6 +150,13 @@ export default class Team extends Component {
          
          
           </div>
+        
+        
+        
+        {/*}
+          <p className="team_type"> Student Body</p>
+
+    */}
         </div>
       </>
     );

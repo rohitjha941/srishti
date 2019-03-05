@@ -38,7 +38,7 @@ export default class Footer extends Component {
           <a target ="_blank"  rel="noopener noreferrer" href="https://www.linkedin.com/company/srishti-iit-roorkee/">
             Linkedin
           </a>
-          <a target ="_blank"  rel="noopener noreferrer"  href="https://iitr.ac.in">IIIR Website</a>
+          <a target ="_blank"  rel="noopener noreferrer"  href="https://iitr.ac.in">IITR Website</a>
         </div>
       </div>
     );

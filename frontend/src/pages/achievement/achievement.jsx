@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./ach.scss";
-import Top from "../../static/achievement/top.png";
+import Top from "../../static/achievement/InterIIT.jpg";
 import Chart from "../../static/achievement/chart.png";
 import Prize from "../../static/achievement/prize.png";
 

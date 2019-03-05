@@ -97,7 +97,7 @@ export default class GoupDetails extends Component {
           )}
           {data.members.length === 0 ? null : (
             <div className="group-details-events">
-              <div className="title2">Contact Us</div>
+              <div className="group-header-title">Contact Us</div>
 
               {data.members.map(e => {
                 console.log(e);

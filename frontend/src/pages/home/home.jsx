@@ -149,11 +149,10 @@ export default class Home extends Component {
           </div>
         )}
 
-    
         <div className="home-testimonails">
           <div className="title2">TESTIMONIALS</div>
 
-       {/*   <div
+          {/*   <div
             className="home-testimonails-data"
             style={{ marginBottom: "120px" }}
           >
@@ -187,10 +186,7 @@ export default class Home extends Component {
             </div>
           </div>
        */}
-          <div
-            className="home-testimonails-data"
-            id="testi2"
-          >
+          <div className="home-testimonails-data" id="testi2">
             <div className="home-testimonails-data-image">
               <img
                 src="https://tinkeringlab.iitr.ac.in/media/members/management/Prof._Manoranjan_Parida.jpg"
@@ -203,8 +199,21 @@ export default class Home extends Component {
               <p>Dean SRIC</p>
               <p>IIT Roorkee </p>
               <p>
-                 Being compatriots of this institution, we have always work on our esoteric ideas and walk on a unconventional paths. In fact, an event like Srishti is an easel on which students paint with colours of unbridled ideas. We are committed to edifying the young talented minds of this modern order. Srishti 2019 adds a bright chapter in a promise to make IIT  Roorkee a druid among all the institutes of higher education. Groups in Srishti have not only participated to win but to brush away the fear of being lampooned of the inefficacy. Viewer's astonishment was the fact that Knox's automobiles have successfully outmanoeuvred all the terrains and Physics and Astronomy Club promises that one of the genii in theoretical physics can come from IIT Roorkee too.
-I acknowledge the hard work of Team Srishti 2019 for setting up new bar and we are ready for a dynamic event.
+                Being compatriots of this institution, we have always worked on
+                our esoteric ideas and walked on unconventional paths. In fact,
+                an event like Srishti is an easel on which students paint with
+                colours of unbridled ideas. We are committed to edifying the
+                young talented minds of this modern order. Srishti 2019 adds a
+                bright chapter in a promise to make IIT Roorkee a druid among
+                all the institutes of higher education. Groups in Srishti have
+                not only participated to win but to brush away the fear of being
+                lampooned of the inefficacy. Viewer's astonishment was the fact
+                that Knox's automobiles have successfully outmanoeuvred all the
+                terrains and Physics and Astronomy Club promises that one of the
+                genii in theoretical physics can come from IIT Roorkee too.
+                <br />
+                <br />I acknowledge the hard work of Team Srishti 2019 for
+                setting up a new bar and we are ready for a dynamic event.
               </p>
             </div>
 
@@ -213,7 +222,7 @@ I acknowledge the hard work of Team Srishti 2019 for setting up new bar and we a
             </div>
           </div>
         </div>
-  
+
         <Stat />
 
         <div className="home-sponsors">
