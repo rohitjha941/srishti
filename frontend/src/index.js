@@ -12,6 +12,7 @@ import About from "./pages/about";
 import Achievement from "./pages/achievement/achievement";
 import Footer from "./compo/footer/footer";
 import Scroll from "./compo/scrolltotop"
+import Team from "./pages/team/team";
 class Main extends Component {
   render() {
     return (
@@ -24,6 +25,7 @@ class Main extends Component {
             <Route path = "/groups/details" exact = {true} component = {GoupDetails} />
             <Route path = "/about" component = {About} />
             <Route path = "/achievements" component = {Achievement} />
+            <Route path = "/team" component = {Team} />
           </Switch>
           <Footer />
         </Scroll>

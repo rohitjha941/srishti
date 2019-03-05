@@ -42,6 +42,10 @@ class Nav extends Component {
             <li>
               <NavLink to="/achievements"> Achievements </NavLink>
             </li>
+
+            <li>
+              <NavLink to="/team"> Team </NavLink>
+            </li>
           </ul>
         </span>
       </div>

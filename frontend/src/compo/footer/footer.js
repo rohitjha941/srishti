@@ -34,11 +34,11 @@ export default class Footer extends Component {
         </div>
 
         <div className="footer-links">
-          <a target ="_blank"  rel="noopener noreferrer"  href="https://www.facebook.com/iitrsrishti/">FACEBOOK</a>
+          <a target ="_blank"  rel="noopener noreferrer"  href="https://www.facebook.com/iitrsrishti/">Facebook</a>
           <a target ="_blank"  rel="noopener noreferrer" href="https://www.linkedin.com/company/srishti-iit-roorkee/">
-            LINKEDIN
+            Linkedin
           </a>
-          <a target ="_blank"  rel="noopener noreferrer"  href="https://iitr.ac.in">IITR WEBSITE</a>
+          <a target ="_blank"  rel="noopener noreferrer"  href="https://iitr.ac.in">IIIR Website</a>
         </div>
       </div>
     );

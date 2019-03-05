@@ -2,8 +2,9 @@
  div {
      margin: 0;
      padding: 0;
-     font-size: 16px;
+     
  }
+
 
  @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
  @import url('https://fonts.googleapis.com/css?family=Muli:400,600,800');
@@ -35,8 +36,8 @@
     position: absolute;
     width: 3.75rem;
     left: 0;
-    bottom: -10px;
-    border-bottom: 4px solid #552E91;
+    bottom: -0.625rem;
+    border-bottom: 0.25rem solid #552E91;
     
 }
 
@@ -61,9 +62,9 @@
      position: absolute;
      width: 3.75rem;
      left: 0;
-     bottom: -10px;
+     bottom: -0.625rem;
 
-     border-bottom: 4px solid #552E91;
+     border-bottom: 0.25rem solid #552E91;
  }
 
  .ViewAll , .ViewAll a{
@@ -74,3 +75,23 @@
      color: #552E91;
 
  }
+
+
+ @media (min-width:1500px) and (max-width:1800px){
+     html{
+         font-size: 14px;
+     }
+ }
+
+
+ @media (min-width:1300px) and (max-width:1500px){
+    html{
+        font-size: 12px;
+    }
+}
+
+@media (min-width:900px) and (max-width:1300px){
+    html{
+        font-size: 10.5px;
+    }
+}
