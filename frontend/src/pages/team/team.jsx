@@ -43,7 +43,7 @@ export default class Team extends Component {
                   alt="Avlokita Agrawal"
                 />
               </div>
-              <p className="name">Avlokita Agrawal</p>
+              <p className="name">Prof. Avlokita Agrawal</p>
               <p className="des">Faculty Coordinator - Srishti’19</p>
             </div>
 
