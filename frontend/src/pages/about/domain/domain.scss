@@ -15,9 +15,10 @@
                 height: 2em;
                 width: 2em;
                 vertical-align: center;
+                display: none;
             }
 
-            span {
+            span,li {
                 font-weight: 300;
                 line-height: 1.75rem;
                 font-size: 1rem;
@@ -26,6 +27,8 @@
 
                 margin-left: 1rem;
             }
+
+            
         }
 
 

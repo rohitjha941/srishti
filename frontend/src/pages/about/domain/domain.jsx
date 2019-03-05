@@ -15,7 +15,7 @@ export default class Domain extends Component {
     return (
       <div className="Domain">
    
-          <p className="title2">DOMAIN COVERED</p>
+          <p className="title2">DOMAINS COVERED</p>
      
 
         <div className="DomainArray">
@@ -23,7 +23,7 @@ export default class Domain extends Component {
             return (
               <div key={e.id}>
                 <img src={e.image} alt={e.name} />
-                <span>{e.name}</span>
+                <li>{e.name}</li>
               </div>
             );
           })}
