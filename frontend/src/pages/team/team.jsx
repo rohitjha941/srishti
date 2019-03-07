@@ -6,6 +6,8 @@ import Atul from "../../static/team/Atul.1.jpg";
 import Madhur from "../../static/team/madhur.1.jpg";
 import Marcha from "../../static/team/Marcha.jpg";
 import Prasanna from "../../static/team/Prasanna.1.jpg";
+import Fb from "../../static/team/fb.png";
+import Ln from "../../static/team/ln.png";
 
 export default class Team extends Component {
   render() {
@@ -97,7 +99,7 @@ export default class Team extends Component {
               </div>
               <p className="name">Prof. Akshay Dvivedi</p>
               <p className="des">
-                Faculty Advisor - SAE, IITR <br /> MotorSports - IITR <br /> 
+                Faculty Advisor - SAE, IITR <br /> MotorSports - IITR <br />
                 Team KNOx
               </p>
             </div>
@@ -152,15 +154,29 @@ export default class Team extends Component {
           <div className="team_array">
             <div className="team_unit">
               <div>
-                <img
-                  src={Anant}
-                  alt="Anant Vashistha"
-                />
+                <img src={Anant} alt="Anant Vashistha" />
               </div>
-              <p className = "name">Anant Vashistha</p>
-              <p className = "des">Overall Coordinator</p>
+              <p className="name">Anant Vashistha</p>
+              <p className="des">Overall Coordinator</p>
+              <center>
+                <a
+                  href="https://www.facebook.com/anant.vashistha.1"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/anant-vashistha/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </center>
             </div>
-{/*
+            {/*
             <div className="team_unit">
               <div>
                 <img
@@ -187,49 +203,103 @@ export default class Team extends Component {
 
             <div className="team_unit">
               <div>
-                <img
-                  src={Atul}
-                  alt="Atul Patidar"
-                />
+                <img src={Atul} alt="Atul Patidar" />
               </div>
-              <p className = "name">Atul Patidar</p>
-              <p className = "des">Head - Events & Promotions</p>
+              <p className="name">Atul Patidar</p>
+              <p className="des">Head - Events & Promotions</p>
+              <center>
+                <a
+                  href="https://www.facebook.com/atul.patidar.165"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+
+                <a
+                  href="https://in.linkedin.com/in/atul-patidar-849516104"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </center>
             </div>
 
             <div className="team_unit">
               <div>
-                <img
-                  src={Madhur}
-                  alt="Madhur Bhutke"
-                />
+                <img src={Madhur} alt="Madhur Bhutke" />
               </div>
-              <p className = "name">Madhur Bhutke</p>
-              <p className = "des">Head - Sponsorship</p>
+              <p className="name">Madhur Bhutke</p>
+              <p className="des">Head - Sponsorship</p>
+              <center>
+                <a
+                  href="https://www.facebook.com/madhurbutke"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/madhur-butke/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </center>
             </div>
 
             <div className="team_unit">
               <div>
-                <img
-                  src={Prasanna}
-                  alt="Prasannadeep Das"
-                />
+                <img src={Prasanna} alt="Prasannadeep Das" />
               </div>
-              <p className = "name">Prasannadeep Das</p>
-              <p className = "des">Head - Design & Web-D</p>
+              <p className="name">Prasannadeep Das</p>
+              <p className="des">Head - Design & Web-D</p>
+              <center>
+                <a
+                  href="https://www.facebook.com/prasanna.das.921"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/prasannadeep-das-803057132/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </center>
             </div>
 
             <div className="team_unit">
               <div>
-                <img
-                  src={Marcha}
-                  alt="Sanjeevani Marcha"
-                />
+                <img src={Marcha} alt="Sanjeevani Marcha" />
               </div>
-              <p className = "name">Sanjeevani Marcha</p>
-              <p className = "des">Head - Editorial</p>
+              <p className="name">Sanjeevani Marcha</p>
+              <p className="des">Head - Editorial</p>
+              <center>
+                <a
+                  href="https://www.facebook.com/sanjeevani.marcha"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/sanjeevani-marcha-30020b160/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </center>
             </div>
-
-
           </div>
         </div>
       </>

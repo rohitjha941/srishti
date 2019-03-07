@@ -16,7 +16,7 @@ export default class Achievement extends Component {
             <div>
               <ul>
                 <li>
-                  Team IRC, 2nd position, National Robotics Challenge 2017
+                  Team IRC, 2nd position, International Robotics Challenge 2017
                 </li>
                 <li>
                   Aditya Peshin, 2nd prize of $150, Oral Presentation

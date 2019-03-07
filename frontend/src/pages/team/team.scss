@@ -38,6 +38,7 @@
                 text-align: center;
                 padding-top: 1em;
                 color: #000000;
+                margin-bottom: 0.5rem;
             }
 
             .des {
@@ -45,10 +46,23 @@
                 line-height: 1.25rem;
                 font-size: 0.875rem;
                 text-align: center;
-
+                padding-bottom: 0.5em;
+                margin-bottom: 0;
                 color: #979797;
 
             }
+
+            i{
+                font-size: 2rem;
+                padding-right: 0.5em;
+                display: inline-block;
+                padding-bottom: 1em;
+                color: initial;
+                transition: 0.2s ease all;
+                opacity: 0.5;
+                
+            }
+           
         }
 
         .team_unit:hover {
@@ -56,7 +70,16 @@
                 filter: none;
                 transition: 0.2s ease all;
             }
-
+            .fa-facebook{
+                color: #3b5998;
+                transition: 0.2s ease all;
+                opacity: 1;
+            }
+            .fa-linkedin{
+                color: #0077B5;
+                transition: 0.2s ease all;
+                opacity: 1;
+            }
             background: #ffffff;
             transition: 0.2s ease all;
             box-shadow: 0px 3px 40px rgba(100, 103, 105, 0.12);
