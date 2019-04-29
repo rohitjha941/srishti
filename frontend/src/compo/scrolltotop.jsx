@@ -11,8 +11,6 @@ class ScrollToTop extends Component {
 
   componentDidMount() {
     window.scrollTo(0, 0);
-    console.log(window.innerWidth);
-
     if (window.innerWidth < 900) {
       var viewport_meta = document.getElementById('viewport-meta');
       viewport_meta.setAttribute("content", "width=1200");
