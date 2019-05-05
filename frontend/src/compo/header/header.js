@@ -43,7 +43,7 @@ class Nav extends Component {
       </li>
     );
 
-    if (this.props.user !== null) {
+    if (this.props.user !== null && this.props.user !== undefined ) {
       login = (
         <Dropdown placement="bottomRight" overlay={menu}>
           <li className="navbar_unit" id="login">
