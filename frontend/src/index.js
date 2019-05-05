@@ -16,8 +16,9 @@ import Team from "./pages/team/team";
 import Login from "./pages/login/login";
 import axios from "axios";
 import { backend_url, token } from "./const";
-import 'antd/dist/antd.css'; 
+import 'antd/dist/antd.css';
 import Logout from "./pages/logout/logout";
+import Myaccount from "./pages/myaccount/myaccount";
 
 class Main extends Component {
   state = {
@@ -58,7 +59,12 @@ class Main extends Component {
             <Route path="/team" component={Team} />
             <Route path="/login" component={Login} />
             <Route path="/register" component={Login} />
-            <Route path ="/logout" component = {Logout} />
+            <Route path="/logout" component={Logout} />
+            <Route path="/Myaccount"
+              render={props => (
+                <Myaccount {...props} user={this.state.user} />
+              )}
+            />
           </Switch>
           <Footer />
         </Scroll>

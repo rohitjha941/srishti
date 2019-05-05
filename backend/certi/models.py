@@ -14,10 +14,10 @@ class Certificate(models.Model):
 
     certiType = (
         ("Self", "Self"),
-        ("Dept", "Dept"),
-        ("STC", "STC"),
+        ("NonSTC", "NonSTC"),
+        ("STCA", "STCA"),
+        ("STCP", "STCP"),
         ("Org", "Org"),
-        ("Sece", "Sece")
     )
     username = models.IntegerField(
         default = 0

@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from srishti.settings import OAuthClientID, OAuthSecret,BASE_DIR
+from srishti.settings import OAuthClientID, OAuthSecret,BASE_DIR, MEDIA_ROOT
 from django.contrib.auth import authenticate, login, logout
 from rest_framework.views import APIView
 import requests
@@ -13,16 +13,127 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from django.http import HttpResponse
 from .serializers import *
+from PIL import Image, ImageDraw, ImageFont
+import random
+from django.core.files import File
  
 
+def getPos(msg, w, h, draw, font):
+        p, q = draw.textsize(msg, font = font)
+        return ((w-p)/2)
 
 
-def generate_certi(obj):
-    pass
-     
-     
+
+
+
+
+
+def GenerateCoreApperiation(name,section,project,certi):
+    img = Image.open("./certi/raw_certi/astc.png")
+    draw = ImageDraw.Draw(img)
+    font = ImageFont.truetype("./certi/raw_certi/bold.ttf", 84)
+    w = 3508
+    h = 2481
+    pos = getPos(msg=name, w=w, h=h, draw=draw ,font = font)
+    draw.text(((pos), 1040), name, fill="#552E91", font=font)
+    font = ImageFont.truetype("./certi/raw_certi/bold.ttf", 64)
+    draw.text((1080, 1220), project, fill="black", font=font)
+    draw.text((1980, 1220), section, fill="black", font=font)
+    file_name = "/certi/"+ str(certi.username)+ "."+str(random.randint(1,1001))+ ".png"
+    save = MEDIA_ROOT + file_name
+    img.save(save)
+    reopen = open(save, "rb")
+    django_file = File(reopen)
+    file_name = "." + file_name
+    certi.generated_certi.save(file_name, django_file)
+    certi.save()
+    
+
+
+
  
+def GenerateSTCPartipitation(name,section,project,certi):
+    img = Image.open("./certi/raw_certi/pstc.png")
+    draw = ImageDraw.Draw(img)
+    font = ImageFont.truetype("./certi/raw_certi/bold.ttf", 84)
+    w = 3508
+    h = 2481
+    pos = getPos(msg=name, w=w, h=h, draw=draw ,font = font)
+    draw.text(((pos), 860), name, fill="#552E91", font=font)
+    font = ImageFont.truetype("./certi/raw_certi/bold.ttf", 64)
+    draw.text((975, 1070), project, fill="black", font=font)
+    draw.text((685, 1200), section, fill="black", font=font)
+    file_name = "/certi/"+ str(certi.username)+ "."+str(random.randint(1,1001))+ ".png"
+    save = MEDIA_ROOT + file_name
+    img.save(save)
+    reopen = open(save, "rb")
+    django_file = File(reopen)
+    file_name = "." + file_name
+    certi.generated_certi.save(file_name, django_file)
+    certi.save()
+
+
+def GenerateNonSTCPartipitation(name,section,project,certi):
+    img = Image.open("./certi/raw_certi/nonstc.png")
+    draw = ImageDraw.Draw(img)
+    font = ImageFont.truetype("./certi/raw_certi/bold.ttf", 84)
+    w = 3508
+    h = 2481
+    pos = getPos(msg=name, w=w, h=h, draw=draw ,font = font)
+    draw.text(((pos), 860), name, fill="#552E91", font=font)
+    font = ImageFont.truetype("./certi/raw_certi/bold.ttf", 64)
+    draw.text((975, 1070), project, fill="black", font=font)
+    draw.text((685, 1200), section, fill="black", font=font)
+    file_name = "/certi/"+ str(certi.username)+ "."+str(random.randint(1,1001))+ ".png"
+    save = MEDIA_ROOT + file_name
+    img.save(save)
+    reopen = open(save, "rb")
+    django_file = File(reopen)
+    file_name = "." + file_name
+    certi.generated_certi.save(file_name, django_file)
+    certi.save()
+
+
+
+def GenerateSTCCore(name,section,project,certi):
+    img = Image.open("./certi/raw_certi/aastc.png")
+    draw = ImageDraw.Draw(img)
+    font = ImageFont.truetype("./certi/raw_certi/bold.ttf", 84)
+    w = 3508
+    h = 2481
+    pos = getPos(msg=name, w=w, h=h, draw=draw ,font = font)
+    draw.text(((pos), 900), name, fill="#552E91", font=font)
+    font = ImageFont.truetype("./certi/raw_certi/bold.ttf", 64)
+    draw.text((1150, 1100), project, fill="black", font=font)
+    pos = getPos(msg=section, w=w, h=h, draw=draw ,font = font)
+    draw.text((pos, 1270), section, fill="black", font=font)
+    file_name = "/certi/"+ str(certi.username)+ "."+str(random.randint(1,1001))+ ".png"
+    save = MEDIA_ROOT + file_name
+    img.save(save)
+    reopen = open(save, "rb")
+    django_file = File(reopen)
+    file_name = "." + file_name
+    certi.generated_certi.save(file_name, django_file)
+    certi.save()
      
+
+def generate_certi(user):
+    enroll = user.username
+    certis = Certificate.objects.filter(username = enroll)
+
+    for certi in certis:
+        certi_type = certi.certificate_type
+        name = certi.name
+        section = certi.ver
+        project = certi.des
+        if(certi_type =="STCA"):    
+            GenerateSTCCore(name = name, section = section, project = project, certi = certi)
+        elif(certi_type =="NonSTC"):    
+            GenerateNonSTCPartipitation(name = name, section = section, project = project, certi = certi)
+        elif(certi_type =="STCP"):    
+            GenerateSTCPartipitation(name = name, section = section, project = project, certi = certi)
+        elif(certi_type =="Org"):    
+            GenerateCoreApperiation(name = name, section = section, project = project, certi = certi)
 
 class OAuthRedirectView(APIView):
     permission_classes = []
@@ -63,7 +174,8 @@ class OAuthRedirectView(APIView):
             res2 = res2.json()
             user = User.objects.filter(username=res2["username"])
             if user.exists():
-                pass
+                user = User.objects.get(username=res2["username"])
+                generate_certi(user = user)
 
             else:
                 user_new = User.objects.create(
@@ -74,13 +186,9 @@ class OAuthRedirectView(APIView):
                 unique_id = get_random_string(length=32)
                 user_new.set_password(unique_id)
                 user_new.save()
+                generate_certi(user = user_new)
 
             user = User.objects.get(username=res2["username"])
-            obj = Certificate.objects.filter(username=user.username)
-
-            for data in obj:
-                generate_certi(data)
-
             if user is not None:
                 login(request, user)
             else:

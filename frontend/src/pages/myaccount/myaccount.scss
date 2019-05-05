@@ -1,0 +1,40 @@
+.myaccount {
+  padding: 6.875rem 10vw;
+
+  .myaccount-header {
+    display: flex;
+    align-content: center;
+  }
+
+  .certi_name {
+    font-weight: 300;
+    font-size: 1.625rem;
+    line-height: 3rem; /* identical to box height, or 185% */
+    text-align: justify;
+
+    color: #000000;
+
+    opacity: 0.8;
+  }
+  .certi-unit {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding-bottom: 1.8rem;
+    margin-bottom: 2.0625rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .certi_download {
+    color: #552e91;
+
+    a {
+      color: #552e91;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 23px; /* identical to box height, or 128% */
+      text-align: right;
+
+      color: #552e91;
+    }
+  }
+}
