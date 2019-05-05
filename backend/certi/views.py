@@ -22,12 +22,6 @@ def getPos(msg, w, h, draw, font):
         p, q = draw.textsize(msg, font = font)
         return ((w-p)/2)
 
-
-
-
-
-
-
 def GenerateCoreApperiation(name,section,project,certi):
     img = Image.open("./certi/raw_certi/astc.png")
     draw = ImageDraw.Draw(img)
@@ -216,3 +210,17 @@ class LogoutView(APIView):
         request.user.auth_token.delete()
         logout(request)
         return Response(status=status.HTTP_200_OK)
+
+
+
+
+
+def VerifyCerti(request, id):
+    certi = certis = Certificate.objects.get(id = id)
+    name = certi.name
+    section = certi.ver
+    project = certi.des
+    res = "<h1> This Certificate belong to " + name + "<br>Project/Position : " + project + "<br> Section Name : " + section 
+    return HttpResponse(res)
+
+   

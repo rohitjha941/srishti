@@ -6,6 +6,6 @@ urlpatterns = [
     path("login/", views.OAuthRedirectView.as_view()),
     path("profile/", views.UserProfile.as_view()),
     path("logout/", views.LogoutView.as_view()),
-    path("test/", TemplateView.as_view(template_name="sece.html")),
+    path("verify/:id", views.VerifyCerti)
 
 ]
