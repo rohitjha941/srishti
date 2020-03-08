@@ -29,7 +29,6 @@ INSTALLED_APPS = [
     'import_export',
     "rest_framework",
     'corsheaders',
-    "certi",
     'rest_framework.authtoken'
 ]
 
