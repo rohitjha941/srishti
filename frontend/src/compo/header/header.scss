@@ -1,15 +1,14 @@
+@import "../../index.scss";
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 8vw;
+  padding: 1rem 8vw;
   background: #ffffff;
 
   z-index: 100;
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
   transition: 0.5s ease;
   .navbar-items {
     display: inline;
@@ -20,24 +19,20 @@
 
       a {
         display: inline-block;
-        font-weight: 600;
-        line-height: 1.125rem;
-        font-size: 1rem;
         text-transform: uppercase;
-        color: #5e5b5b;
-        margin-left: 2.5rem;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 1.5rem;
+        color: $primaryColor;
+        font-style: normal;
+        margin-left: 2.8125rem;
       }
 
       .active {
-        font-weight: bolder;
-        line-height: 1.125rem;
-        font-size: 1rem;
-        text-decoration: none;
-        color: #552e91;
+        border-bottom: 1px solid #15ffb1;
       }
     }
   }
-
 }
 
 .navbar-shadow {
