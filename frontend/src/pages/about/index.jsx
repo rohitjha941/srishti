@@ -9,7 +9,7 @@ export default class About extends Component {
       <div className="about">
         <AboutSrishti />
         <History />
-        <Domain />
+        {/* <Domain /> */}
       </div>
     );
   }

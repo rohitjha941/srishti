@@ -1,15 +1,7 @@
+@import "../../../index.scss";
 .AboutSrishti {
-    font-weight: 300;
-    line-height: 1.625rem;
-    font-size: 1rem;
-    color: #1D1D1D;
-    text-align: justify;
-    margin: 7% 15vw 15vh 15vw;
-
-    background: #F6F7F8;
-
-    p{
-        
-        padding: 1.875rem 3.75rem;
-    }
+  padding-left: $paddingLeftRight;
+  padding-right: 43.75rem;
+  padding-top: 10rem;
+  padding-bottom: 16.875rem;
 }
