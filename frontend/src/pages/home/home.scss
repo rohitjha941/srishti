@@ -1,371 +1,47 @@
-    .home {
-        
-        padding-top: 8rem;
-        background-image: url("../../static/home/back.png");
-
-        .home-about {
-
-            display: grid;
-            grid-template-columns: 50% 45%;
-            grid-column-gap: 5%;
-
-            p:nth-child(2) {
-
-                font-weight: 300;
-                line-height: 1.75rem;
-                font-size: 1.125rem;
-                padding: 0 5vw 0 0;
-                color: #000000;
-
-            }
-
-            p:nth-child(3) a {
-                font-weight: bold;
-                line-height: 1.4375rem;
-                font-size: 1.125rem;
-                color: #552E91;
-            }
-
-        }
-
-        .home-domains {
-
-            .home-domain-slidder {
-
-                img {
-                    width: 25vw;
-                }
-
-                .home-domain-slidder-parent {
-                    position: relative;
-
-                    .carousel__back-button,
-                    .carousel__next-button {
-                        position: absolute;
-                        background: none;
-                        border: none;
-                        width: 1vw;
-                        top: 25%;
-                        z-index: 100;
-
-                        img {
-                            width: 1vw;
-
-                        }
-                    }
-
-                    .carousel__next-button {
-                        right: 0;
-                    }
-
-                    .carousel__back-button {
-                        left: -4vw;
-                    }
-                }
-
-            }
-        }
-
-        .home-testimonails {
-            .home-testimonails-data {
-                display: grid;
-                grid-template-columns: 30% 45% auto;
-                grid-column-gap: 5%;
-
-                .home-testimonails-data-image {
-                    img {
-                        width: 100%;
-                    }
-                }
-
-                .home-testimonails-data-arrow {
-                    position: relative;
-
-                    img {
-                        position: absolute;
-                        top: 0;
-                    }
-                }
-
-                .home-testimonails-data-details {
-                    p:nth-child(4) {
-                        font-weight: 300;
-                        line-height: 1.75rem;
-                        font-size: 1.125rem;
-                        margin-bottom: 15%;
-                        color: #1D1D1D;
-                    }
-
-                    p:nth-child(1) {
-                        font-weight: 600;
-                        line-height: 1.6875rem;
-                        font-size: 1.125rem;
-
-                        color: #552E91;
-
-                    }
-
-                    p:nth-child(2),
-                    p:nth-child(3) {
-                        font-style: italic;
-                        font-weight: normal;
-                        line-height: 1.5rem;
-                        font-size: 1rem;
-                        margin-bottom: 0;
-                        color: rgba(0, 0, 0, 0.5);
-                    }
-
-                    p:nth-child(3) {
-                        margin-bottom: 1rem;
-                    }
-                }
-
-            }
-        }
-
-        .home-sponsors {
-            background: #F6F7F8;
-            margin-left: 18%;
-            margin-right: 8vw;
-            padding-top: 1.875rem;
-
-            .home-sponsors-div {
-
-                padding: 0 3% 5%;
-                grid-column-gap: 5vw;
-
-                .home-sponsors-description {
-                    font-style: normal;
-                    font-weight: 300;
-                    line-height: 1.5rem;
-                    font-size: 1rem;
-                    color: #000000;
-                }
-
-                .home-sponsors-array {
-                    display: grid;
-                    grid-template-columns: repeat(5, 18%);
-                    grid-row-gap: 2vw;
-                    grid-column-gap: 1vw;
-                    padding-top: 10vh;
-                    padding-bottom: 2vh;
-                    align-items: center;
-                    justify-items: center;
-
-                    div {
-                        display: grid;
-                        align-items: center;
-                        justify-items: center;
-                        width: 100%;
-                        border-radius: 50%;
-
-                        img {
-                            max-width: 100%;
-                        }
-                    }
-                }
-            }
-        }
-
-        .home-contact {
-            background: #F6F7F8;
-            margin-left: 18%;
-            margin-right: 8vw;
-            display: grid;
-            grid-template-columns: auto 50%;
-            padding: 40px 0;
-
-            .home-contact-form {
-                position: relative;
-                margin-right: 10%;
-
-                form {
-
-                    position: absolute;
-
-                    background: #FFFFFF;
-                    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.15);
-                    border-radius: 0.125rem;
-
-                    padding: 80px;
-
-                    top: -20%;
-                    bottom: -20%;
-                    text-align: center;
-
-                    p {
-                        font-weight: bold;
-                        line-height: 1.8125rem;
-                        font-size: 1.25rem;
-
-                        color: #552E91;
-                    }
-
-                    input {
-                        width: 100%;
-                        line-height: 1.8125rem;
-                        font-size: 1.4375rem;
-                        color: #929292;
-                        border: none;
-                        border-bottom: 0.0625rem solid #979797;
-                        padding-bottom: 0.5625rem;
-                        margin-bottom: 3.375rem;
-
-                        &:focus {
-                            outline: none;
-                        }
-                    }
-
-                    input[type=submit] {
-
-                        background: #4A90E2;
-                        border-radius: 0.0625rem;
-                        width: auto;
-                        line-height: 1.8125rem;
-                        font-size: 1.4375rem;
-                        text-align: justify;
-
-                        color: #FFFFFF;
-                        padding: 0.875rem 3.125rem;
-                        margin-bottom: 0;
-                    }
-                }
-            }
-
-            .home-contact-array {
-                padding: 60px 80px 0;
-            }
-
-            .home-contact-item {
-                display: grid;
-                grid-template-columns: 5rem auto;
-                padding-bottom: 2.5rem;
-                grid-column-gap: 0.625rem;
-
-                .item1,
-                .item2 {
-
-                    display: grid;
-                    align-items: center;
-
-                }
-
-                .item2 {
-                    .item2-title {
-                        line-height: 1.75rem;
-                        font-size: 1.375rem;
-                        text-align: justify;
-                        align-self: initial;
-                        color: #000000;
-
-                    }
-
-                    .item2-des,
-                    .item2-des a {
-                        font-weight: 300;
-                        line-height: 1.5rem;
-                        font-size: 1rem;
-
-                        color: #5E5B5B;
-
-                    }
-                }
-            }
-        }
-
-        .home-about,
-        .home-contact,
-        .home-sponsors,
-        .home-testimonails {
-            margin-bottom: 12.5rem;
-
-        }
-
-        .home-about,
-        .home-domains,
-        .home-testimonails {
-            padding: 0 8vw;
-        }
-
-    }
-
-    .slidder_temp {
-        img {
-            width: 100%;
-        }
-    }
-
-    .home-projects {
-        margin: 4.5rem 8vw;
-
-
-        .home-project-unit {
-            display: grid;
-            background: #ECECEC;
-            padding: 0 3.125rem;
-            margin: 0 0 10% 0;
-            grid-template-columns: 30% auto;
-            grid-column-gap: 3vw;
-            max-width: 100%;
-
-            .home-project-image {
-                grid-column: 1;
-                align-self: center;
-                height: 100%;
-
-                img {
-                    height: 120%;
-                    width:100%;
-                    margin-top: -10%;
-                    margin-bottom: -15%;
-                }
-            }
-
-            .home-project-details {
-                grid-column: 2;
-                padding: 50px 0;
-
-                .home-project-title {
-                    font-weight: 600;
-                    line-height: 1.75rem;
-                    font-size: 1.75rem;
-                    margin-bottom: 1em;
-                    color: #552E91;
-
-                }
-
-                .home-project-description {
-                    font-weight: 300;
-                    line-height: 1.75rem;
-                    font-size: 1.125rem;
-
-                    color: #1D1D1D;
-
-                }
-            }
-        }
-
-        .home-project-unit:nth-child(2n) {
-            grid-template-columns: auto 30%;
-
-
-            .home-project-details {
-                grid-column: 1;
-                grid-row: 1;
-            }
-
-            .home-project-image {
-                grid-column: 2;
-
-                grid-row: 1;
-            }
-
-        }
-    }
-
-
-    .srishti-date{
-        margin-bottom: 1em;
-        font-weight: bold;
-        font-size: 1.2rem;
-    }
+@import "../../index.scss";
+
+.home-landing {
+  padding: 7.5rem 60% 27rem $paddingLeftRight;
+}
+
+.home-register {
+  font-family: Lobster;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.25rem;
+  line-height: 2.8125rem;
+  color: #2f0072;
+
+  background: #f4f4f4;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1.875rem;
+  border: none;
+  padding: 0.3125rem 2.625rem;
+  margin-top: 3.75rem;
+
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.home-testimonial {
+  padding: 11.25rem 14.5rem;
+  display: grid;
+  background: $gradiant;
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10.5rem;
+
+  img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.home-testimonial-text {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  color: #f4f4f4;
+}

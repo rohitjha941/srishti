@@ -8,7 +8,7 @@ export default class Footer extends Component {
     return (
       <div className="footer">
         <div className="logo logo-border-right">
-          <a target ="_blank"  rel="noopener noreferrer" href="http://iitr.ac.in">
+          <a target="_blank" rel="noopener noreferrer" href="http://iitr.ac.in">
             <img src={iitr} alt="IIT Roorkee Logo" />
           </a>
         </div>
@@ -34,12 +34,25 @@ export default class Footer extends Component {
         </div>
 
         <div className="footer-links">
-          <a target ="_blank"  rel="noopener noreferrer"  href="https://www.facebook.com/iitrsrishti/">Facebook</a>
-          <a target ="_blank"  rel="noopener noreferrer" href="https://www.linkedin.com/company/srishti-iit-roorkee/">
-            Linkedin
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/iitrsrishti/"
+          >
+            <img src={require("../../static/footer-fb.png")} alt="" />
           </a>
-          <a target ="_blank"  rel="noopener noreferrer"  href="https://iitr.ac.in">IITR Website</a>
         </div>
+
+        <div className="footer-links">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/company/srishti-iit-roorkee/"
+          >
+            <img src={require("../../static/footer-linkedin.png")} alt="" />
+          </a>
+        </div>
+
       </div>
     );
   }

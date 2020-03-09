@@ -3,14 +3,14 @@ import ReactDOM from "react-dom";
 import "./index.scss";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Nav from "./compo/header/header";
+import Nav from "./components/header/header";
 import Home from "./pages/home/home";
 import Groups from "./pages/groups/group";
 import GoupDetails from "./pages/groups_details/index";
 import About from "./pages/about";
 import Achievement from "./pages/achievement/achievement";
-import Footer from "./compo/footer/footer";
-import Scroll from "./compo/scrolltotop";
+import Footer from "./components/footer/footer";
+import Scroll from "./components/scrolltotop";
 import Team from "./pages/team/team";
 
 class Main extends Component {

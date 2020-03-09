@@ -4,9 +4,10 @@ import styled from 'styled-components'
 
 const Heading = styled.div`
     font-weight: 900;
-    font-size: 64px;
-    line-height: 80px;
+    font-size: 4rem;
+    line-height: 5rem;
     color: #000000;
+    margin-bottom: 3.75rem;
 `
 
 export default class Title extends Component {
