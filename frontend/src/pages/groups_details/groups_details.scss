@@ -98,45 +98,42 @@
   padding-bottom: 1.4375rem;
 }
 
-
-.group-header{
-  padding-top:3rem;
-
- 
+.group-header {
+  padding-top: 3rem;
 }
 
-.group-header-title{
+.group-header-title {
   font-weight: 900;
   font-size: 36px;
   line-height: 45px;
-  color: #4F4F4F;
+  color: #4f4f4f;
   padding-bottom: 3rem;
 }
 
-.groups-header1{
+.groups-header1 {
   display: flex;
   /* display: flex; */
   font-weight: 900;
   font-size: 3rem;
   line-height: 45px;
-  color: #4F4F4F;
+  color: #4f4f4f;
   /* -webkit-justify-content: space-evenly; */
   /* justify-content: space-evenly; */
   margin-bottom: 2rem;
-  img{
+  img {
     width: 7rem !important;
     margin-right: 2vw;
   }
 }
-.groups-info1{
+.groups-info1 {
   font-size: 1.5rem;
   /* line-height: 30px; */
   padding-right: 5vw;
-  color: #8C8C8C;
+  color: #8c8c8c;
 }
 .groups-unit1 {
   display: flex;
-padding: 7% 7% 0 7%;
+  padding: 7% 7% 0 7%;
   position: relative;
 
   .group-image-holder1 {
@@ -147,8 +144,6 @@ padding: 7% 7% 0 7%;
     box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.2);
   }
 
-
-
   img {
     border-radius: 0.125rem;
     width: 100%;
@@ -156,48 +151,49 @@ padding: 7% 7% 0 7%;
     /* padding-right: 1vw; */
     -webkit-transition: 1s ease;
     transition: 1s ease;
-
   }
 }
-.title2{
-font-weight: 900;
-font-size: 2.25rem;
-line-height: 45px;
+.title2 {
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: 45px;
 
-/* Gray 2 */
+  /* Gray 2 */
 
-color: #4F4F4F;
+  color: #4f4f4f;
 }
-table{
+table {
   border-collapse: collapse;
   width: 100%;
-  th{
+  th {
     text-align: left;
-    padding:5px 15px;
+    padding: 5px 15px;
     font-weight: 900;
     font-size: 1rem;
     line-height: 23px;
-    color: #4F4F4F;
+    color: #4f4f4f;
   }
-  td{
+  td {
     text-align: left;
     padding: 5px 15px;
   }
-  tr:nth-child(odd) {background-color:  rgba(21, 255, 177, 0.18);;}
+  tr:nth-child(odd) {
+    background-color: rgba(21, 255, 177, 0.18);
+  }
 }
-.group-contact-unit{
+.group-contact-unit {
   display: flex;
   padding: 8rem 0;
-  img{
+  img {
     border-radius: 50%;
     width: 71%;
   }
-  .group-contact-detail{
+  .group-contact-detail {
     margin: auto 0;
   }
-  .group-contact-detail-name{
+  .group-contact-detail-name {
     font-weight: 900;
-    color: #4F4F4F;
+    color: #4f4f4f;
     font-size: 1rem;
     line-height: 23px;
   }
