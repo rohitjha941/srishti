@@ -4,9 +4,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem $paddingLeftRight;
-  background: #ffffff;
   z-index: 100;
-  position: sticky;
+  // position: sticky;
   top: 0;
   transition: 0.5s ease;
   .navbar-items {
@@ -35,6 +34,6 @@
 }
 
 .navbar-shadow {
-  box-shadow: 0rem 0.125rem 1rem rgba(0, 0, 0, 0.15);
-  transition: 1s ease;
+  // box-shadow: 0rem 0.125rem 1rem rgba(0, 0, 0, 0.15);
+  // transition: 1s ease;
 }

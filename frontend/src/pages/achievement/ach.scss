@@ -1,53 +1,15 @@
-.ach {
-    padding: 7.625rem 13.75rem;
+@import "../../index.scss";
+.achievements {
+  padding: 10rem $paddingLeftRight;
+  padding-right: 50rem;
+  height: 100vh;
+  background-image: url("../../static/achievement.png");
+ 
+  background-position: center right ;
+  background-size: 43.75rem auto;
+  background-repeat: no-repeat;
 
-    .ach-array {
-
-        background: url("../../static/achievement/acg.png");
-        background-repeat: no-repeat;
-        background-position: bottom right;
-    }
-
-    li {
-        font-weight: 300;
-        line-height: 1.75rem;
-        font-size: 1.125rem;
-        padding: 0.625rem 0;
-        color: #000000;
-
-    }
-
-    ul {
-        list-style: none;
-    }
-
-    ul li::before {
-        content: "\2022";
-        color: #552E91;
-        font-weight: bold;
-        display: inline-block;
-        width: 1em;
-        margin-left: -1em;
-    }
-}
-
-.ach-flow-chart {
-    padding: 7.625rem 13.75rem;
-
-    img {
-        display: block;
-        width: 80%;
-        padding-top: 5vh;
-    }
-}
-
-
-.many-more {
-    font-style: italic;
-    font-weight: 900;
-    line-height: 1.75rem;
-    font-size: 1.125rem;
-
-    color: #552E91;
-
+  p{
+    line-height: 3.125rem;
+  }
 }

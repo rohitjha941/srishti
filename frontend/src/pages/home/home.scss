@@ -2,6 +2,9 @@
 
 .home-landing {
   padding: 7.5rem 60% 27rem $paddingLeftRight;
+  background: url("../../static/home.svg");       
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .home-register {
@@ -36,6 +39,7 @@
   img {
     width: 100%;
     margin-bottom: 1rem;
+    border-radius: 0.625rem;
   }
 }
 
@@ -44,4 +48,5 @@
   font-size: 1.5rem;
   line-height: 1.875rem;
   color: #f4f4f4;
+  margin-top: 2rem;
 }
