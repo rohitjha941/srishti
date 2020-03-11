@@ -3,7 +3,7 @@ import "./groups_details.scss";
 import Line from "../../static/home/Line.png";
 import phone from "../../static/phone.png";
 import email from "../../static/email.png";
-import ReactHtmlParser  from "react-html-parser";
+import ReactHtmlParser from "react-html-parser";
 
 export default class GoupDetails extends Component {
   render() {
@@ -12,24 +12,48 @@ export default class GoupDetails extends Component {
     console.log(data);
     return (
       <div className="group-details">
-        <div className="group-details-image">
+        {/* <div className="group-details-image">
           <img src={data.image} alt={data.name} />
 
           <div className="group-details-logo">
             <img src={data.logo} alt={data.name + "logo"} />
           </div>
-        </div>
+        </div> */}
 
+        <div className="groups-unit1">
+          {/* <NavLink
+                to={{ pathname: "/groups/details", state: { groups: data } }}
+              >
+                <p className="group-name">{data.name}</p>
+                <div className="group-image-holder">
+                  <img src={data.card_image} alt={data.name} />
+                </div>
+              </NavLink> */}
+
+
+          <div className='groups-data-holder1'>
+            <div className='groups-header1'>
+              <img src={data.logo} width='4rem' alt={data.name} />
+              <p className='groups-name1'>{data.name}</p>
+            </div>
+            <div className='groups-info1'>
+              {data.description}
+            </div>
+          </div>
+          <div className="group-image-holder1">
+            <img src={data.card_image} alt={data.name} />
+          </div>
+        </div>
         <div className="group-details-inner">
-          <div className="title2">{data.name}</div>
+          {/* <div className="title2">{data.name}</div>
           <span className="group-details-website">
-            
+
             <a target="_blank" rel="noopener noreferrer" href={data.web_url}>
-              
+
               Visit Website <img src={Line} alt="" />
             </a>
           </span>
-          <div className="group-details-description">{data.description}</div>
+          <div className="group-details-description">{data.description}</div> */}
           {data.header.map(e => {
             return (
               <div className="group-header">
@@ -43,31 +67,62 @@ export default class GoupDetails extends Component {
           })}
           {data.events.length === 0 ? null : (
             <div className="group-details-events">
-              <div className="title2">Events</div>
+              <div className="title2">Events that we we’ll organize </div>
 
-              {data.events.map(e => {
-                return (
-                  <div key={e.id} className="group-details-events-unit">
-                    <div className="group-details-events-image">
-                      <img src={e.event_image} alt={e.event_name} />
-                    </div>
 
-                    <div className="group-details-events-details">
-                      <div className="group-details-events-name">
-                        {e.event_name}
-                      </div>
+              <div>
+                <table>
+                  <tr>
+                    <th>Name of Event</th>
+                    <th>Day</th>
+                    <th>Venue</th>
+                    <th>Timings</th>
+                  </tr>
+                  {data.events.map(e => {
+                    return (
+                      <tr>
+                        <td>
+                          {e.event_name}
+                        </td>
+                        <td>
+                          {e.date}
+                        </td>
+                        <td>
+                          {e.location}
+                        </td>
+                        <td>
+                          {e.time}
+                        </td>
 
-                      <div className="group-details-events-descritpion">
-                        {e.event_description}
-                      </div>
+                      </tr>
 
-                      <div className="group-details-events-location">
-                        {e.date} | {e.time} | {e.location}
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
+                    )
+
+
+
+                  })}
+                </table>
+              </div>
+              {/* // <div key={e.id} className="group-details-events-unit">
+                  //   <div className="group-details-events-image">
+                  //     <img src={e.event_image} alt={e.event_name} />
+                  //   </div>
+
+                  //   <div className="group-details-events-details">
+                  //     <div className="group-details-events-name">
+                  //       {e.event_name}
+                  //     </div>
+
+                  //     <div className="group-details-events-descritpion">
+                  //       {e.event_description}
+                  //     </div>
+
+                  //     <div className="group-details-events-location">
+                  //       {e.date} | {e.time} | {e.location}
+                  //     </div>
+                  //   </div>
+                  // </div> */}
+
             </div>
           )}
           {data.projects.length === 0 ? null : (
@@ -97,31 +152,28 @@ export default class GoupDetails extends Component {
           )}
           {data.members.length === 0 ? null : (
             <div className="group-details-events">
-              <div className="group-header-title">Contact Us</div>
-
               {data.members.map(e => {
                 console.log(e);
                 return (
-                  <div key={e.id} className="group-details-events-unit">
-                    <div className="group-details-events-image">
+                  <div key={e.id} className="group-contact-unit">
+                    <div className="group-contact-image">
                       <img src={e.photo} alt={e.student_name} />
                     </div>
 
-                    <div className="group-details-events-details">
-                      <div className="group-details-events-name">
+                    <div className="group-contact-detail">
+                    <div className="group-header-title">Contact Us</div>
+                      <div className="group-contact-detail-name">
                         {e.student_name}
                       </div>
 
                       <div className="group-details-contact-designation">
                         {e.student_designation}
                       </div>
-
                       <div className="group-details-contact-designation">
-                        <img src={phone} alt="" /> {e.phone}
+                        {e.email}
                       </div>
-
                       <div className="group-details-contact-designation">
-                        <img src={email} alt="" /> {e.email}
+                       {e.phone}
                       </div>
                     </div>
                   </div>
