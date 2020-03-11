@@ -26,7 +26,7 @@ export default class Home extends Component {
 
         <div className="home-testimonial">
           <div>
-            <img src={require("../../static/dean.JPG")} />
+            <img src={require("../../static/dean.png")} />
             <Text white={true}>
               <b>
                 <center>
@@ -39,29 +39,28 @@ export default class Home extends Component {
           </div>
 
           <div className="home-testimonial-text">
-            Being compatriots of this institution, we have always worked on our
-            esoteric ideas and walked on unconventional paths. In fact, an event
-            like Srishti is an easel on which students paint with colours of
-            unbridled ideas. We are committed to edifying the young talented
-            minds of this modern order. Srishti 2019 adds a bright chapter in a
-            promise to make IIT Roorkee a druid among all the institutes of
-            higher education. Groups in Srishti have not only participated to
-            win but to brush away the fear of being lampooned of the inefficacy.
-            Viewer's astonishment was the fact that Knox's automobiles have
-            successfully outmanoeuvred all the terrains and Physics and
-            Astronomy Club promises that one of the genii in theoretical physics
-            can come from IIT Roorkee too.
-            <br />
-            <br />I acknowledge the hard work of Team Srishti 2020 for setting
-            up a new bar and we are ready for a dynamic event.
+            Nostrud est eu elit nostrud in irure. Velit anim amet tempor
+            exercitation pariatur nisi labore laboris voluptate non. Amet
+            consectetur dolore commodo qui. Consequat aliqua esse et et deserunt
+            consectetur laborum duis amet labore ullamco commodo. Elit voluptate
+            cupidatat adipisicing ullamco culpa. Esse mollit irure deserunt
+            exercitation dolor enim sint enim. Quis exercitation aliqua amet qui
+            elit sunt sunt ad quis. Occaecat nulla labore ex laborum nostrud
+            magna duis ullamco. Pariatur elit incididunt do proident incididunt
+            incididunt irure ut. Reprehenderit qui laboris eu occaecat commodo
+            eu minim ut id et. Est Lorem sint irure ad aliquip anim culpa nulla
+            qui tempor. Minim do in duis aute occaecat elit culpa nulla
+            incididunt. Dolor irure magna nostrud id labore elit esse deserunt
+            tempor id et. Lorem dolor magna quis qui deserunt eiusmod aliquip
+            Lorem velit veniam culpa ex. Labore labore nisi exercitation tempor
+            cupidatat et. Esse do duis do cupidatat consectetur ullamco deserunt
+            officia. Enim adipisicing id aliquip consectetur tempor minim elit
+            adipisicing ipsum adipisicing nisi ipsum non. Excepteur minim cillum
+            ut Lorem nisi. Velit pariatur enim minim dolore consequat.
           </div>
-        
-          <div>
-          
-          
-          </div>
-        </div>
 
+          <div></div>
+        </div>
       </div>
     );
   }

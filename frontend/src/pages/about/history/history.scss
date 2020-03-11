@@ -8,5 +8,8 @@
 }
 
 .vision {
-  background: $gradiant;
+  background-image: url("../../../static/vision.svg"), $gradiant;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  
 }
