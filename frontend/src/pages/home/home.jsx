@@ -8,7 +8,7 @@ export default class Home extends Component {
     return (
       <div className="home">
         <div className="home-landing">
-          <Title>Easel for Unbridled Ideas</Title>
+          <Title>Easel for <br/>Unbridled Ideas</Title>
 
           <Text>
             Srishti is the Annual Technical Exhibition of IIT Roorkee that aims
