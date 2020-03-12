@@ -54,3 +54,15 @@
   color: #f4f4f4;
   margin-top: 2rem;
 }
+
+.home-stats{
+  grid-column: 1 / 3;
+  text-align: center;
+
+  img{
+    width: 82.3125rem;
+    display: block;
+    padding-top: 9.375rem;
+    margin: auto;
+  }
+}
