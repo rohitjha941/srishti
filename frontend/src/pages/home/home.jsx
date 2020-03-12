@@ -30,7 +30,7 @@ export default class Home extends Component {
             <Text white={true}>
               <b>
                 <center>
-                  Prof. Manoranjan Parida
+                  Prof. Manish Shrikhande
                   <br />
                   Dean SRIC
                 </center>
