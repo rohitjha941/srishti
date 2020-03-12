@@ -26,7 +26,7 @@ export default class Home extends Component {
 
         <div className="home-testimonial">
           <div>
-            <img src={require("../../static/dean.png")} />
+            <img src={require("../../static/dean.png")} alt = "Desn SRIC" />
             <Text white={true}>
               <b>
                 <center>
@@ -59,8 +59,8 @@ export default class Home extends Component {
             ut Lorem nisi. Velit pariatur enim minim dolore consequat.
           </div>
 
-          <div  className = "home-stats">
-            <img src  = {require("../../static/stats.png")} alt = "stats"/>
+          <div className="home-stats">
+            <img src={require("../../static/stats.png")} alt="stats" />
           </div>
         </div>
       </div>
