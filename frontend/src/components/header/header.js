@@ -44,12 +44,13 @@ class Nav extends Component {
                 Achievements
               </NavLink>
             </li>
-
+            {/*
             <li className="navbar_unit">
               <NavLink className="navbar_links" to="/team">
                 Team
               </NavLink>
             </li>
+          */}
           </ul>
         </span>
       </div>
