@@ -25,25 +25,23 @@ class Nav extends Component {
         <span>
           <ul className="navbar-items">
             <li className="navbar_unit">
-              <NavLink className="navbar_links" exact to="/">
-                Home
+              <NavLink className="navbar_links" to="/achievements">
+                Achievements
               </NavLink>
             </li>
-            <li className="navbar_unit">
-              <NavLink className="navbar_links" to="/about">
-                About Us
-              </NavLink>
-            </li>
+
             <li className="navbar_unit">
               <NavLink className="navbar_links" to="/groups">
                 Our Groups
               </NavLink>
             </li>
+
             <li className="navbar_unit">
-              <NavLink className="navbar_links" to="/achievements">
-                Achievements
+              <NavLink className="navbar_links" to="/about">
+                About Us
               </NavLink>
             </li>
+
             {/*
             <li className="navbar_unit">
               <NavLink className="navbar_links" to="/team">
