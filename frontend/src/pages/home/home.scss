@@ -1,8 +1,8 @@
 @import "../../index.scss";
 
 .home-landing {
-  padding: 0 65rem 10rem $paddingLeftRight;
-  margin-right: 10rem;
+  padding: 0 50.875rem 10rem $paddingLeftRight;
+  margin-right: $paddingLeftRight;
   margin-top: 7rem;
   background: url("../../static/home.JPG");       
   background-repeat: no-repeat;
