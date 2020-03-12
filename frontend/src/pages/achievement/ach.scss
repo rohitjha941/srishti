@@ -1,15 +1,15 @@
 @import "../../index.scss";
 .achievements {
-  padding: 10rem $paddingLeftRight;
+  padding: 7rem $paddingLeftRight;
   padding-right: 50rem;
   height: 100vh;
   background-image: url("../../static/achievement.png");
  
   background-position: center right ;
-  background-size: 60rem auto;
+  background-size: 43.125rem auto;
   background-repeat: no-repeat;
 
   p{
-    line-height: 3.125rem;
+    line-height: 2.5rem;
   }
 }
